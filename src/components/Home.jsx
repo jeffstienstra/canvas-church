@@ -3,10 +3,10 @@ import {HiArrowNarrowRight} from 'react-icons/hi'
 
 function Home() {
     return (
-        <div name='home' className='w-full h-screen bg-white'>
+        <div name='home' className='w-full h-screen'>
 
             {/* container */}
-            <div className='mx-auto px-8 flex flex-col pt-[8em] items-center h-full'>
+            <div className='mx-auto px-8 flex flex-col py-8 items-center h-full'>
                 <div className='max-w-[668px]'>
                 {/* <p className='text-[#5A707A] text-2xl md:text-5xl font-thin'>We are</p> */}
                 <div>
