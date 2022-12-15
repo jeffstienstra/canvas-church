@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+/*
+  canvasChurchOrange = #D55A1E
+  canvasChurchBlue = #4DB1CC
+  canvasChurchGray = #5A707A
+*/
+
 /* roboto - for standard text */
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
 

@@ -1,12 +1,13 @@
 import React, {useState} from 'react'
 import {FaBars, FaTimes} from 'react-icons/fa'
+import {FaFacebook} from 'react-icons/fa'
 import Logo from '../assets/canvas-church-logo-transparent.svg'
 
 const NavBar = () => {
     const [showNav, setShowNav] = useState(false);
     const handleClick = () => setShowNav(!showNav);
     return (
-        <header className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#181d20] text-gray-300' >
+        <header className='fixed w-full h-[80px] flex justify-between items-center px-2 bg-[#181d20] text-gray-300' >
             <div className='flex w-[128px] mx-4'>
                 <a href="/" >
                     <img src={Logo} alt="Canvas Church Logo"
@@ -18,13 +19,13 @@ const NavBar = () => {
             <ul className='hidden md:flex'>
                 <li>Home</li>
                 <li>About</li>
-                <li>Skills</li>
-                <li>Work</li>
+                <li>Media</li>
+                <li>Community</li>
                 <li>Contact</li>
             </ul>
 
             {/* hamburger */}
-            <div onClick={handleClick} className='md:hidden z-10 cursor-pointer'>
+            <div onClick={handleClick} className='md:hidden flex p-3 z-10 cursor-pointer text-2xl'>
                 {!showNav ? <FaBars /> : <FaTimes  />}
             </div>
 
@@ -32,13 +33,21 @@ const NavBar = () => {
             <ul className={!showNav ? 'hidden' : 'absolute top-0 left-0 w-full h-screen bg-[#181d20] flex flex-col justify-center items-center'}>
                 <li className='py-6 text-4xl'>Home</li>
                 <li className='py-6 text-4xl'>About</li>
-                <li className='py-6 text-4xl'>Skills</li>
-                <li className='py-6 text-4xl'>Work</li>
+                <li className='py-6 text-4xl'>Media</li>
+                <li className='py-6 text-4xl'>Community</li>
                 <li className='py-6 text-4xl'>Contact</li>
             </ul>
 
             {/* social icons */}
-            <div className='hidden'>
+            <div className='flex fixed flex-col top-[45%] left-0 bg-white rounded-r'>
+                <ul>
+                    <li className='w-[144px] h-[60px] flex justify-between items-center px-3 ml-[-86px] hover:ml-[0px] duration-200'>
+                        <a className='flex justify-between items-center w-full text-[#4267B2] hover:text-[rgb(66,102,178,0.75)]'
+                        href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                            FaceBook <FaFacebook className='text-[rgb(66,102,178)] text-4xl hover:text-[rgb(66,102,178,0.75)]'/>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </header>
     )
