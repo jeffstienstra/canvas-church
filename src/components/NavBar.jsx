@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import {FaBars, FaTimes} from 'react-icons/fa'
-import {FaFacebook} from 'react-icons/fa'
+import {FaFacebook, FaEnvelope} from 'react-icons/fa'
 import Logo from '../assets/canvas-church-logo-transparent.svg'
 
 const NavBar = () => {
@@ -39,12 +39,18 @@ const NavBar = () => {
             </ul>
 
             {/* social icons */}
-            <div className='flex fixed flex-col top-[45%] left-0 bg-white rounded-r'>
+            <div className='flex fixed flex-col top-[45%] left-0'>
                 <ul>
-                    <li className='w-[144px] h-[60px] flex justify-between items-center px-3 ml-[-86px] hover:ml-[0px] duration-200'>
-                        <a className='flex justify-between items-center w-full text-[#4267B2] hover:text-[rgb(66,102,178,0.75)]'
+                    <li className='w-[144px] h-[60px] flex justify-between items-center px-3 bg-white rounded-tr ml-[-86px] hover:ml-[0px] hover:rounded-r duration-200'>
+                        <a className='flex justify-between items-center w-full text-[#4267B2]'
                         href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
                             FaceBook <FaFacebook className='text-[rgb(66,102,178)] text-4xl hover:text-[rgb(66,102,178,0.75)]'/>
+                        </a>
+                    </li>
+                    <li className='w-[144px] h-[60px] flex justify-between items-center px-3 bg-white rounded-br ml-[-86px] hover:ml-[0px] hover:rounded-r duration-200'>
+                        <a className='flex justify-between items-center w-full text-[rgb(213,90,30)]'
+                        href="/contact">
+                            Contact <FaEnvelope className='text-[#D55A1E] text-4xl hover:text-[rgb(213,90,30,0.75)]'/>
                         </a>
                     </li>
                 </ul>
