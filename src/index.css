@@ -4,8 +4,8 @@
 
 /*
   canvasChurchOrange = #D55A1E or rgb(213,90,30)
-  canvasChurchBlue = #4DB1CC
-  canvasChurchGray = #5A707A
+  canvasChurchBlue = #4DB1CC or rgb(77,177,204)
+  canvasChurchGray = #5A707A or rgb(90,112,122)
 */
 
 /* roboto - for standard text */
@@ -16,8 +16,8 @@
 
 @layer base {
   body {
-    @apply font-[HelveticaNeue];
-    background-color: #5A707A; /* TODO: change this when done */
+    /* @apply font-[HelveticaNeue]; */
+    /* background-color: #5A707A; /* TODO: change this when done */
   }
 
   li {
