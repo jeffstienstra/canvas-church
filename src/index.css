@@ -2,6 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  background-color: #5A707A; /* TODO: change this when done */
+/* roboto - for standard text */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+
+/* caveat - for titles/emphasis */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+
+@layer base {
+  body {
+    @apply font-[HelveticaNeue];
+    background-color: #5A707A; /* TODO: change this when done */
+  }
+
+  li {
+    @apply px-4;
+    @apply cursor-pointer;
+  }
 }
