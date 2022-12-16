@@ -1,5 +1,4 @@
 import React from 'react'
-import {HiArrowNarrowRight} from 'react-icons/hi'
 
 function Home() {
     return (
@@ -11,7 +10,10 @@ function Home() {
                 {/* <p className='text-[#5A707A] text-2xl md:text-5xl font-thin'>We are</p> */}
                 <div>
                 <h1 className='text-[#D55A1E] text-4xl sm:text-5xl md:text-8xl font-bold text-center'>Canvas Church</h1>
-                <h2 className='text-[#4DB1CC] text-2xl sm:text-3xl md:text-4xl text-center md:text-right'>A Place For Every One</h2>
+                <div className='flex justify-center md:justify-end'>
+                    <h2 className='text-[#4DB1CC] text-2xl sm:text-3xl md:text-4xl text-center md:text-right'>A Place For Every</h2>
+                    <h2 className='text-[#D55A1E] text-2xl sm:text-3xl md:text-4xl text-center md:text-right'>&nbsp;One</h2>
+                </div>
                 </div>
                 <p className='text-[#181d20] my-8 text-justify'>
                     Community means making space for everyone. Community means making space for everyone.
