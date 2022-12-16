@@ -120,7 +120,7 @@ export default function Example() {
                     <a href="/">
                     <span className="sr-only">Canvas Church</span>
                     <img
-                        className="h-8 w-auto sm:h-12 outline-none"
+                        className="h-8 w-auto sm:h-12 outline-none sm:hover:h-14 sm:hover:ml-[-5px] sm:hover:mb-[-5px] duration-200"
                         src={Logo}
                         alt="Canvas Church Logo"
                     />

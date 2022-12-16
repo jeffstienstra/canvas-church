@@ -2,7 +2,7 @@ import React from 'react'
 
 function Home() {
     return (
-        <div name='home' className='w-full h-screen'>
+        <div className='w-full h-screen'>
 
             {/* container */}
             <div className='mx-auto px-8 flex flex-col py-8 items-center h-full'>
