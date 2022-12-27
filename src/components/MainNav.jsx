@@ -8,6 +8,12 @@ import Logo from '../assets/canvas-church-logo-transparent.svg'
 
 const about = [
     {
+        name: 'Test',
+        description: 'test test',
+        href: '/about',
+        icon: FaBookOpen,
+    },
+    {
         name: 'Our Story',
         description: 'Stories Matter',
         href: '/about',
