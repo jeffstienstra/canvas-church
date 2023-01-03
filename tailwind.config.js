@@ -13,9 +13,6 @@ module.exports = {
     extend: {
       backgroundImage: {
         'bricks-blue': "url('assets/bricks-blue-killari-hotaru.jpg')",
-        'canvas-orange': "url('assets/canvas-orange-bright.jpg')",
-        'canvas-blue': "url('assets/canvas-blue.jpg')",
-        'canvas-cyan': "url('assets/canvas-cyan2.png')",
         'hills-fog': "url('assets/hills-fog-alex-shutin.jpg')",
         'rusty-metal': "url('assets/rusty-metal-panels-kelly-sikkema.jpg')",
         'flaking-paint': "url('assets/flaking-paint-killari-hotaru.jpg')",
