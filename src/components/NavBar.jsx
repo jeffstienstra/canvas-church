@@ -9,8 +9,8 @@ const NavBar = () => {
     return (
         <header className='fixed w-full h-[80px] flex justify-between items-center px-2 bg-[#181d20] text-gray-300' >
             <div className='flex w-[128px] mx-4'>
-                <a href="/" >
-                    <img src={Logo} alt="Canvas Church Logo"
+                <a href='/' >
+                    <img src={Logo} alt='Canvas Church Logo'
                         className='w-[116px] hover:w-[128px] hover:mx-[-3px] duration-200'
                     />
                 </a>
@@ -43,13 +43,13 @@ const NavBar = () => {
                 <ul>
                     <li className='w-[144px] h-[50px] flex justify-between items-center px-3 bg-white rounded-tr ml-[-86px] hover:ml-[0px] hover:rounded-r duration-200'>
                         <a className='flex justify-between items-center w-full text-[#4267B2]'
-                        href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                        href='https://www.facebook.com' target='_blank' rel='noopener noreferrer'>
                             FaceBook <FaFacebook className='text-[rgb(66,102,178)] text-4xl hover:text-[rgb(66,102,178,0.75)]'/>
                         </a>
                     </li>
                     <li className='hidden sm:flex w-[144px] h-[50px] justify-between items-center px-3 bg-white rounded-br ml-[-86px] hover:ml-[0px] hover:rounded-r duration-200'>
                         <a className='flex justify-between items-center w-full text-[rgb(213,90,30)]'
-                        href="/contact">
+                        href='/contact'>
                             Contact <FaEnvelope className='text-[#D55A1E] text-4xl hover:text-[rgb(213,90,30,0.75)]'/>
                         </a>
                     </li>
