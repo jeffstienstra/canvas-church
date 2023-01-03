@@ -5,8 +5,8 @@ function Home() {
     return (
         <div className='mb-12'>
             <div>
-                <div className='bg-bricks-blue z-0 h-[500px] relative overflow-hidden bg-no-repeat bg-cover bg-center'>
-                    <div className='absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed' style={{'backgroundColor': 'rgba(0, 0, 0, 0.75)'}}>
+                <div className='bg-flaking-paint z-0 h-[500px] relative overflow-hidden bg-no-repeat bg-cover bg-center'>
+                    <div className='absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed bg-black bg-opacity-75'>
                         <div className='flex justify-center items-center h-full'>
                             <div className='text-center text-white px-6 md:px-12'>
                                 <h1 className='text-[#D55A1E] text-5xl sm:text-6xl md:text-8xl font-bold text-center'

@@ -57,7 +57,7 @@ const community = [
     },
     {
         name: 'Small Groups',
-        description: 'Get together in a low stress, low key, lo-fi kinda way',
+        description: 'low stress get togethers',
         href: '/community',
         icon: HiChatBubbleLeftRight,
     },
@@ -109,19 +109,22 @@ export default function Example() {
                         <FaBars className='h-6 w-6' aria-hidden='true' />
                         </Popover.Button>
                     </div>
-                    <Popover.Group as='nav' className='hidden space-x-10 md:flex'>
+                    <Popover.Group as='nav' className='hidden space-x-10 md:flex md:justify-center'>
                         {/* normal menu links */}
-                        <a href='/' className='text-base font-medium text-gray-500 hover:text-gray-900'>
-                        Home
+                        <a href='/' className='text-base font-medium text-gray-500 hover:text-gray-900
+                            rounded-md focus:outline-none focus:ring-2 focus:ring-[#4DB1CC] focus:ring-offset-2'>
+                            Home
                         </a>
-                        <a href='/sundays' className='text-base font-medium text-gray-500 hover:text-gray-900'>
-                        Sundays
+                        <a href='/sundays' className='text-base font-medium text-gray-500 hover:text-gray-900
+                            rounded-md focus:outline-none focus:ring-2 focus:ring-[#4DB1CC] focus:ring-offset-2'>
+                            Sundays
                         </a>
 
                         {/* fly-out menu links */}
                         <Popover className='relative'>
                             {({ open }) => (
                                 <>
+                                {/* About dropdown */}
                                     <Popover.Button
                                         className={classNames(
                                         open ? 'text-gray-900' : 'text-gray-500',
@@ -310,6 +313,7 @@ export default function Example() {
                             )}
                         </Popover>
                     </Popover.Group>
+                    <div></div>
                 </div>
             </div>
 
@@ -326,7 +330,7 @@ export default function Example() {
                     <div className='divide-y-2 divide-gray-50 rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5'>
                         <div className='px-5 pt-5 pb-6'>
                             <div className='flex items-center justify-between'>
-                                <div>
+                                <div className='rounded-md focus:outline-none focus:ring-2 focus:ring-[#4DB1CC] focus:ring-offset-2'>
                                     <a href='/'>
                                         <span className='sr-only'>Canvas Church</span>
                                         <img
@@ -348,10 +352,12 @@ export default function Example() {
                             <Popover className='flex flex-col justify-center items-center mb-2 popover'>
                                 {({ open }) => (
                                     <>
-                                        <a href='/' className='text-base font-medium text-gray-500 hover:text-gray-900'>
+                                        <a href='/' className='mb-2 text-base font-medium text-gray-500 hover:text-gray-900
+                                            rounded-md focus:outline-none focus:ring-2 focus:ring-[#4DB1CC] focus:ring-offset-2'>
                                             Home
                                         </a>
-                                        <a href='/sundays' className='text-base mb-2 font-medium text-gray-500 hover:text-gray-900'>
+                                        <a href='/sundays' className='text-base mb-2 font-medium text-gray-500 hover:text-gray-900
+                                            rounded-md focus:outline-none focus:ring-2 focus:ring-[#4DB1CC] focus:ring-offset-2'>
                                             Sundays
                                         </a>
                                         <Popover.Button

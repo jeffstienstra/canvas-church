@@ -29,16 +29,18 @@ function Sundays() {
                         <PhotoCard
                             image='bg-flaking-paint'
                             title="What Happens During The Service?"
+                            subtitle="We will sing a few songs in the beginning, followed by a prayer and welcome. We shout out a few quick announcements and then
+                            take a break we call half time! It's an extended time of greeting each other, grabbing a coffee refill and cookie."
                             marginTop='mt-0'
                             paddingY='py-2'/>
                     </div>
                     <div className='text-[#181d20] text-justify'>
                         <p className='my-4'>
                             We will sing a few songs in the beginning, followed by a prayer and welcome. We shout out a few quick announcements and then
-                            take a break we call half time! It’s an extended time of greeting each other, grabbing a coffee refill and cookie.
+                            take a break we call half time! It's an extended time of greeting each other, grabbing a coffee refill and cookie.
                         </p>
                         <p className='my-8'>
-                            After that is the teaching time where we dig into God’s word together. We wrap it up with another song and a blessing. The whole
+                            After that is the teaching time where we dig into God's word together. We wrap it up with another song and a blessing. The whole
                             thing takes about an hour. We are really good at sticking to that time, especially with our kids sitting in worship with us.
                         </p>
                         <p className='my-8'>
