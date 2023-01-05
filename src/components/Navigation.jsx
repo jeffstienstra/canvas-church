@@ -5,23 +5,24 @@ import {HiChatBubbleBottomCenterText, HiChatBubbleLeftRight} from 'react-icons/h
 import {BsCalendar2EventFill} from 'react-icons/bs'
 import {ImBooks, ImAddressBook} from 'react-icons/im'
 import Logo from '../assets/canvas-church-logo-transparent.svg'
+// import {about} from './NavigationList'
 
 const about = [
     {
         name: 'Our Story',
-        description: 'Stories Matter',
+        // description: 'Stories Matter',
         href: '/story',
         icon: FaBook,
     },
     {
         name: 'Our Team',
-        description: 'Friendly Faces',
+        // description: 'Friendly Faces',
         href: '/about',
         icon: ImAddressBook,
     },
     {
         name: 'What We Believe',
-        description: 'Theology Guides Actions',
+        // description: 'Theology Guides Actions',
         href: '/believe',
         icon: FaBookMedical,
     },
@@ -30,19 +31,19 @@ const about = [
 const media = [
     {
         name: 'Sermons',
-        description: 'Relax and listen to Sundays gone by',
+        // description: 'Relax and listen to Sundays gone by',
         href: '/media',
         icon: HiChatBubbleBottomCenterText,
     },
     {
         name: 'Newsletters',
-        description: 'Catch up on the latest community news',
+        // description: 'Catch up on the latest community news',
         href: 'media',
         icon: FaNewspaper,
     },
     {
         name: 'Resources',
-        description: 'Help is out there',
+        // description: 'Help is out there',
         href: 'media',
         icon: ImBooks,
     },
@@ -51,25 +52,25 @@ const media = [
 const community = [
     {
         name: 'Kids',
-        description: 'Fer da kids!',
+        // description: 'Fer da kids!',
         href: '/community',
         icon: FaLaugh,
     },
     {
         name: 'Small Groups',
-        description: 'low stress get togethers',
+        // description: 'low stress get togethers',
         href: '/community',
         icon: HiChatBubbleLeftRight,
     },
     {
         name: 'Events',
-        description: 'Go do the things',
+        // description: 'Go do the things',
         href: '/community',
         icon: BsCalendar2EventFill,
     },
     {
         name: 'Partnerships',
-        description: 'Better together',
+        // description: 'Better together',
         href: '/community',
         icon: FaHandshake,
     },
@@ -90,7 +91,7 @@ export default function Example() {
             <div className='mx-auto max-w-7xl px-4 sm:px-6'>
                 <div className='flex items-center justify-between border-b-2
                     border-gray-100 py-3 md:space-x-10'>
-                    <div className='flex justify-start sm:w-0 sm:flex-1'>
+                    <div className='flex justify-between sm:w-0 sm:flex-1'>
                         <a href='/'>
                         <span className='sr-only'>Canvas Church</span>
                         <img
@@ -159,7 +160,7 @@ export default function Example() {
                                                     href={item.href}
                                                     className='-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50'
                                                     >
-                                                    <item.icon className='h-6 w-6 mt-3 flex-shrink-0 text-[#4DB1CC]' aria-hidden='true' />
+                                                    <item.icon className='h-6 w-6 flex-shrink-0 text-[#4DB1CC]' aria-hidden='true' />
                                                     <div className='ml-4'>
                                                         <p className='text-base font-medium text-gray-900'>{item.name}</p>
                                                         <p className='mt-1 text-sm text-gray-500'>{item.description}</p>
@@ -221,7 +222,7 @@ export default function Example() {
                                         href={item.href}
                                         className='-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50'
                                         >
-                                        <item.icon className='h-6 w-6 mt-3 flex-shrink-0 text-[#4DB1CC]' aria-hidden='true' />
+                                        <item.icon className='h-6 w-6 flex-shrink-0 text-[#4DB1CC]' aria-hidden='true' />
                                         <div className='ml-4'>
                                             <p className='text-base font-medium text-gray-900'>{item.name}</p>
                                             <p className='mt-1 text-sm text-gray-500'>{item.description}</p>
@@ -285,7 +286,7 @@ export default function Example() {
                                             href={item.href}
                                             className='-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50'
                                             >
-                                            <item.icon className='h-6 w-6 mt-3 flex-shrink-0 text-[#4DB1CC]' aria-hidden='true' />
+                                            <item.icon className='h-6 w-6 flex-shrink-0 text-[#4DB1CC]' aria-hidden='true' />
                                             <div className='ml-4'>
                                                 <p className='text-base font-medium text-gray-900'>{item.name}</p>
                                                 <p className='mt-1 text-sm text-gray-500'>{item.description}</p>
@@ -313,7 +314,6 @@ export default function Example() {
                             )}
                         </Popover>
                     </Popover.Group>
-                    <div></div>
                 </div>
             </div>
 
@@ -396,7 +396,7 @@ export default function Example() {
                                                             <a key={item.name} href={item.href}
                                                                 className='-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50'
                                                             >
-                                                            <item.icon className='h-6 w-6 mt-3 flex-shrink-0 text-[#4DB1CC]' aria-hidden='true' />
+                                                            <item.icon className='h-6 w-6 flex-shrink-0 text-[#4DB1CC]' aria-hidden='true' />
                                                             <div className='ml-4'>
                                                                 <p className='text-base font-medium text-gray-900'>{item.name}</p>
                                                                 <p className='mt-1 text-sm text-gray-500'>{item.description}</p>
@@ -460,7 +460,7 @@ export default function Example() {
                                                             <a key={item.name} href={item.href}
                                                                 className='-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50'
                                                             >
-                                                            <item.icon className='h-6 w-6 mt-3 flex-shrink-0 text-[#4DB1CC]' aria-hidden='true' />
+                                                            <item.icon className='h-6 w-6 flex-shrink-0 text-[#4DB1CC]' aria-hidden='true' />
                                                             <div className='ml-4'>
                                                                 <p className='text-base font-medium text-gray-900'>{item.name}</p>
                                                                 <p className='mt-1 text-sm text-gray-500'>{item.description}</p>
@@ -524,7 +524,7 @@ export default function Example() {
                                                             <a key={item.name} href={item.href}
                                                                 className='-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50'
                                                             >
-                                                            <item.icon className='h-6 w-6 mt-3 flex-shrink-0 text-[#4DB1CC]' aria-hidden='true' />
+                                                            <item.icon className='h-6 w-6 flex-shrink-0 text-[#4DB1CC]' aria-hidden='true' />
                                                             <div className='ml-4'>
                                                                 <p className='text-base font-medium text-gray-900'>{item.name}</p>
                                                                 <p className='mt-1 text-sm text-gray-500'>{item.description}</p>
@@ -551,58 +551,7 @@ export default function Example() {
                                     </>
                                 )}
                             </Popover>
-
-                            {/* mobile menu options w/o descriptions */}
-                            {/*
-                            <div className='mt-6'>
-                                <nav className='grid gap-y-8'>
-                                    {about.map((item) => (
-                                        <a
-                                            key={item.name}
-                                            href={item.href}
-                                            className='-m-3 flex items-center rounded-md p-3 hover:bg-gray-50'
-                                            >
-                                                <item.icon className='h-6 w-6 flex-shrink-0 text-[#4DB1CC]' aria-hidden='true' />
-                                                <span className='ml-3 text-base font-medium text-gray-900'>{item.name}</span>
-                                        </a>
-                                    ))}
-                                </nav>
-                            </div> */}
-                            </div>
-                            {/* <div className='space-y-6 py-6 px-5'>
-                            <div className='grid grid-cols-2 gap-y-4 gap-x-8'>
-                                <a href='#' className='text-base font-medium text-gray-900 hover:text-gray-700'>
-                                    Pricing
-                                </a>
-
-                                <a href='#' className='text-base font-medium text-gray-900 hover:text-gray-700'>
-                                    Docs
-                                </a>
-                                {resources.map((item) => (
-                                    <a
-                                        key={item.name}
-                                        href={item.href}
-                                        className='text-base font-medium text-gray-900 hover:text-gray-700'
-                                    >
-                                        {item.name}
-                                    </a>
-                                ))}
-                            </div>
-                            <div>
-                                <a
-                                    href='#'
-                                    className='flex w-full items-center justify-center rounded-md border border-transparent bg-[#4DB1CC] px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-[#D55A1E]'
-                                >
-                                    Sign up
-                                </a>
-                                <p className='mt-6 text-center text-base font-medium text-gray-500'>
-                                    Existing customer?{' '}
-                                    <a href='#' className='text-[rgb(77,177,204)] hover:text-[#D55A1E]'>
-                                        Sign in
-                                    </a>
-                                </p>
-                            </div>
-                        </div> */}
+                        </div>
                     </div>
                 </Popover.Panel>
             </Transition>

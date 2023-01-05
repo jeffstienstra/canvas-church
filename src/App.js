@@ -4,13 +4,13 @@ import Story from './components/Story';
 import Believe from './components/Believe';
 import Community from './components/Community';
 import Sundays from './components/Sundays';
-import MainNav from './components/MainNav';
+import Navigation from './components/Navigation';
 import {Routes, Route} from 'react-router-dom'
 
 function App() {
   return (
     <>
-      <MainNav />
+      <Navigation />
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/about' element={<About/>}/>

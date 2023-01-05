@@ -1,4 +1,5 @@
 import React from 'react'
+import DataCard from './DataCard'
 // import Park from '../assets/park-beth-macdonald.jpg'
 
 function Home() {
@@ -10,7 +11,7 @@ function Home() {
                         <div className='flex justify-center items-center h-full'>
                             <div className='text-center text-white px-6 md:px-12'>
                                 <h1 className='text-[#D55A1E] text-5xl sm:text-6xl md:text-8xl font-bold text-center'
-                                >Canvas <span className='text-[#4DB1CC] text-5xl sm:text-6xl md:text-8xl font-bold text-center'>church</span></h1>
+                                >Canvas <span className='text-[#4DB1CC] text-5xl sm:text-6xl md:text-8xl font-bold text-center'>Church</span></h1>
                                 <h1 className='text-3xl md:text-6xl xl:text-7xl font-bold tracking-tight mb-12'>a place for everyone</h1>
                                 <div className='sm:flex justify-center items-start flex-wrap'>
                                     <div>
@@ -43,6 +44,8 @@ function Home() {
                     </div>
                 </div>
             </div>
+
+            <DataCard/>
 
             {/* content container */}
             <div className='mx-auto px-8 flex flex-col py-8 items-center'>
