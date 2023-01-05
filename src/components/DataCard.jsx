@@ -22,11 +22,11 @@ function DataCard() {
             <div className='bg-white p-4 sm:p-6'>
 
 
-                <h3 className='mt-0.5 text-lg text-gray-900'>
+                {/* <h3 className='mt-0.5 text-lg text-gray-900'>
                     Where to find us
-                </h3>
+                </h3> */}
 
-                <p className='mt-2 text-sm leading-relaxed text-gray-500 line-clamp-3'>
+                <p className='mt-2 text-md leading-relaxed text-gray-500 line-clamp-3'>
                 We're located just south of 28th St on the corner of Ivanrest and 30th.
                 There's plenty of parking along the side and rear of the building.
                 Come on in through the doors facing 30th Street.

@@ -10,6 +10,8 @@ function Sundays() {
                 <div className='max-w-[668px]'>
                     <PhotoCard image='bg-flaking-paint2'
                         title="What Are Sundays Like?"
+                        marginTop='mt-4'
+                        paddingY='py-8'
                         subtitle={
                             <div className='my-4 px-4 sm:px-8 sm:text-xl'>
                                 <p>
@@ -23,13 +25,13 @@ function Sundays() {
                                     to do. We believe kids play a vibrant and important role in our worship and our church community and we know they can't
                                     always be quiet and sit still.
                                 </p>
-                            </div>}
-                        marginTop='mt-4'
-                        paddingY='py-8'/>
+                            </div>}/>
                     <div className='mt-8'>
                         <PhotoCard
                             image='bg-flaking-paint'
                             title="What Happens During The Service?"
+                            marginTop='mt-4'
+                            paddingY='py-8'
                             subtitle={
                                 <div className='my-4 px-4 sm:px-8 sm:text-xl'>
                                     <p>
@@ -41,14 +43,14 @@ function Sundays() {
                                         After that is the teaching time where we dig into God's word together. We wrap it up with another song and a blessing. The whole
                                         thing takes about an hour. We are really good at sticking to that time, especially with our kids sitting in worship with us.
                                     </p>
-                                </div>}
-                            marginTop='mt-4'
-                            paddingY='py-8'/>
+                                </div>}/>
                     </div>
                     <div className='mt-8 mb-20'>
                         <PhotoCard
                             image='bg-flaking-paint3'
                             title="Come As You Are"
+                            marginTop='mt-4'
+                            paddingY='py-8'
                             subtitle={
                                 <div className='my-4 px-4 sm:px-8 sm:text-xl'>
                                     <p>
@@ -64,9 +66,7 @@ function Sundays() {
                                         If it's hard for you to believe in church anymore, it's okay…come because you believe in God. Hope to see you
                                         soon…we will save a seat for you!
                                     </p>
-                                </div>}
-                            marginTop='mt-4'
-                            paddingY='py-8'/>
+                                </div>}/>
                     </div>
                 </div>
             </div>
