@@ -1,5 +1,6 @@
 import Home from './components/Home';
 import About from './components/About';
+import Contact from './components/Contact';
 import Story from './components/Story';
 import Believe from './components/Believe';
 import Community from './components/Community';
@@ -16,6 +17,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/about' element={<About/>}/>
+        <Route path='/contact' element={<Contact/>}/>
         <Route path='/story' element={<Story/>}/>
         <Route path='/believe' element={<Believe/>}/>
         <Route path='/community' element={<Community/>}/>

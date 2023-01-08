@@ -1,0 +1,25 @@
+[debug] [2023-01-08T14:11:28.294Z] ----------------------------------------------------------------------
+[debug] [2023-01-08T14:11:28.296Z] Command:       /Users/jeffstienstra/.nvm/versions/node/v16.18.0/bin/node /Users/jeffstienstra/.nvm/versions/node/v16.18.0/bin/firebase deploy
+[debug] [2023-01-08T14:11:28.297Z] CLI Version:   11.20.0
+[debug] [2023-01-08T14:11:28.297Z] Platform:      darwin
+[debug] [2023-01-08T14:11:28.297Z] Node Version:  v16.18.0
+[debug] [2023-01-08T14:11:28.298Z] Time:          Sun Jan 08 2023 09:11:28 GMT-0500 (Eastern Standard Time)
+[debug] [2023-01-08T14:11:28.298Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-01-08T14:11:28.358Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-01-08T14:11:28.358Z] > authorizing via signed-in user (jeffstienstra@gmail.com)
+[debug] [2023-01-08T14:11:28.358Z] [iam] checking project canvas-church-484a2 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-01-08T14:11:28.360Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/canvas-church-484a2:testIamPermissions [none]
+[debug] [2023-01-08T14:11:28.361Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/canvas-church-484a2:testIamPermissions x-goog-quota-user=projects/canvas-church-484a2
+[debug] [2023-01-08T14:11:28.361Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/canvas-church-484a2:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-01-08T14:11:28.549Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/canvas-church-484a2:testIamPermissions 200
+[debug] [2023-01-08T14:11:28.549Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/canvas-church-484a2:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-01-08T14:11:28.550Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/canvas-church-484a2 [none]
+[debug] [2023-01-08T14:11:28.750Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/canvas-church-484a2 200
+[debug] [2023-01-08T14:11:28.750Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/canvas-church-484a2 {"projectId":"canvas-church-484a2","projectNumber":"829270733059","displayName":"Canvas Church","name":"projects/canvas-church-484a2","resources":{"hostingSite":"canvas-church-484a2"},"state":"ACTIVE","etag":"1_265d2eee-961a-4a3c-86be-db83c21fcfcd"}
+[info] 
+[info] === Deploying to 'canvas-church-484a2'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2023-01-08T14:11:28.753Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/canvas-church-484a2/versions [none]
+[debug] [2023-01-08T14:11:28.753Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/canvas-church-484a2/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}

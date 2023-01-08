@@ -15,7 +15,7 @@ function Home() {
                             <div className='text-center text-white'>
                                 <h1 className='text-[#D55A1E] text-6xl sm:text-6xl md:text-8xl font-bold text-center'
                                 >canvas <span className='text-[#4DB1CC] text-6xl sm:text-6xl md:text-8xl font-bold text-center'>church</span></h1>
-                                <h1 className='text-3xl md:text-6xl font-bold tracking-tight'>a place for everyone</h1>
+                                <h1 className='text-3xl md:text-6xl font-bold tracking-tight'>a community for all</h1>
                                 <div className='m-8'>
                                     <h1 className='text-white text-xl sm:text-4xl md:text-4xl font-bold text-center'>sundays @10</h1>
                                 </div>
@@ -31,12 +31,12 @@ function Home() {
                                     </div>
                                     <div className='m-4 mt-6'>
                                         <a className='px-5 py-3
-                                            bg-transparent border-white border-2
+                                            bg-transparent border-transparent border-2 hover:border-white
                                             font-medium text-sm leading-snug uppercase rounded-full shadow-md
                                             hover:bg-opacity-100 focus:border-white focus:ring-0
                                             transition duration-150 ease-in-out'
                                             href='/sundays' role='button'
-                                            >Sundays</a>
+                                            >what are sunday like?</a>
                                     </div>
                                 </div>
                             </div>
