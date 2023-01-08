@@ -1,11 +1,10 @@
 import React from 'react'
 import DataCard from './DataCard'
-import PhotoCard from './PhotoCard'
-// import Park from '../assets/park-beth-macdonald.jpg'
 
 function Home() {
     return (
-        <div className='mt-[58px] sm:mt-[74px]'>
+        <div className='mt-[58px] sm:mt-[74px]
+            bg-gradient-to-b from-[#7f9dab] to-[#6b8592]'>
             <div>
                 <div className='bg-flaking-paint z-0 h-[500px] relative overflow-hidden bg-no-repeat bg-cover bg-center'>
                     <div className='absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed bg-black bg-opacity-75'>
@@ -13,8 +12,12 @@ function Home() {
                             <div className='text-center text-white px-6 md:px-12'>
                                 <h1 className='text-[#D55A1E] text-4xl sm:text-6xl md:text-8xl font-bold text-center'
                                 >canvas <span className='text-[#4DB1CC] text-4xl sm:text-6xl md:text-8xl font-bold text-center'>church</span></h1>
-                                <h1 className='text-3xl md:text-6xl xl:text-7xl font-bold tracking-tight mb-12'>a place for everyone</h1>
-                                <div className='sm:flex justify-center items-start flex-wrap'>
+                                <h1 className='text-3xl md:text-6xl xl:text-7xl font-bold tracking-tight'>a place for everyone</h1>
+                                <div className='m-8'>
+                                    <h1 className='text-[#4DB1CC] text-xl sm:text-4xl md:text-4xl font-bold text-center'>sundays @10</h1>
+                                </div>
+
+                                <div className='sm:flex justify-center items-start flex-wrap my-12'>
                                     <div>
                                         <a className='h-[40px] px-7 py-3 mr-1.5 border-transparent border-none bg-[#D55A1E] bg-opacity-75
                                             font-medium text-sm leading-snug uppercase rounded-full shadow-md
@@ -22,7 +25,7 @@ function Home() {
                                             transition duration-150 ease-in-out'
                                             href='https://www.facebook.com/canvaschurchgr.org' target='_blank' rel='noreferrer' role='button'
                                             >Live Stream</a>
-                                        <p className='text-s text-[#5A707A] mt-3 leading-4'>*Sundays @10am <br /> on Facebook</p>
+                                        {/* <p className='text-s text-[#5A707A] mt-3 leading-4'>sundays @10</p> // button subtitle*/}
                                     </div>
                                     <div className='mt-8 sm:mt-0'>
                                         <a
@@ -42,8 +45,8 @@ function Home() {
             </div>
 
             <div className='mt-8 sm:mt-8 mx-8 text-center text-white px-6 md:px-12'>
-                <h1 className='text-[#4DB1CC] text-3xl sm:text-5xl md:text-6xl font-bold text-center'>When:</h1>
-                <h1 className='text-[#4DB1CC] text-3xl sm:text-5xl md:text-6xl font-bold text-center'>Sundays @10</h1>
+                <h1 className='text-[#5A707A] text-3xl sm:text-5xl md:text-6xl font-bold text-center'>When:</h1>
+                <h1 className='text-[#5A707A] text-3xl sm:text-5xl md:text-6xl font-bold text-center'>Sundays @10</h1>
                 {/* <h1 className='mt-8 -mb-10 text-[#4DB1CC] text-3xl sm:text-5xl md:text-6xl font-bold text-center'>Where:</h1> */}
                 {/* <h1 className='text-[#4DB1CC] text-3xl sm:text-5xl md:text-6xl font-bold text-center'>2976 Ivanrest Ave SW</h1> */}
             </div>

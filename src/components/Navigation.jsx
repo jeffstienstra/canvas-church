@@ -1,6 +1,6 @@
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
-import {FaTimes, FaEnvelope, FaBookOpen, FaLaugh, FaHandshake, FaNewspaper, FaBookMedical, FaBook, FaAddressBook, FaChevronDown, FaBars} from 'react-icons/fa'
+import {FaTimes, FaEnvelope, FaLaugh, FaHandshake, FaNewspaper, FaBookMedical, FaBook, FaChevronDown, FaBars} from 'react-icons/fa'
 import {HiChatBubbleBottomCenterText, HiChatBubbleLeftRight} from 'react-icons/hi2'
 import {BsCalendar2EventFill} from 'react-icons/bs'
 import {ImBooks, ImAddressBook} from 'react-icons/im'
