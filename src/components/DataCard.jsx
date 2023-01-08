@@ -2,7 +2,7 @@ import React from 'react'
 
 function DataCard() {
     return (
-        <div className='max-w-[668px] overflow-hidden rounded-lg shadow-lg'>
+        <div className='overflow-hidden rounded-lg shadow-lg'>
             <div>
                 <iframe src='https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1461.1047056793159!2d-85.7436595!3d42.9106243!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8819b05cdbb3415b%3A0x294fde5b39e82952!2s2976%20Ivanrest%20Ave%20SW%2C%20Wyoming%2C%20MI%2049418!5e0!3m2!1sen!2sus!4v1672887686435!5m2!1sen!2sus'
                     title='location'
