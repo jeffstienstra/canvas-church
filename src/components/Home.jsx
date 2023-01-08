@@ -36,7 +36,7 @@ function Home() {
                                             hover:bg-opacity-100 focus:border-white focus:ring-0
                                             transition duration-150 ease-in-out'
                                             href='/sundays' role='button'
-                                            >what are sunday like?</a>
+                                            >what are sundays like?</a>
                                     </div>
                                 </div>
                             </div>

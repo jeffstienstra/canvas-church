@@ -88,7 +88,7 @@ function classNames(...classes) {
 export default function Example() {
     return (
         <Popover className='fixed z-40 top-0 w-screen bg-white'>
-            <div className='mx-auto max-w-7xl px-4 sm:px-6'>
+            <div className='mx-auto max-w-[668px] px-4 sm:px-6'>
                 <div className='flex items-center justify-between border-b-2
                     border-gray-100 py-3 md:space-x-10'>
                     <div className='flex justify-between sm:w-0 sm:flex-1'>
