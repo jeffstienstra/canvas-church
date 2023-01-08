@@ -3,10 +3,11 @@ import PhotoCard from './PhotoCard'
 
 function Story() {
     return (
-        <div className='bg-[#7f9dab] w-full h-full'>
+        <div className='
+            bg-gradient-to-b from-[#7f9dab] to-[#6b8592]'>
 
             {/* container */}
-            <div className='mx-auto px-8 flex flex-col py-8 items-center'>
+            <div className='mx-auto px-8 flex flex-col py-8 pb-16 items-center'>
                 <div className='max-w-[668px] mb-6'>
                     <PhotoCard image='bg-wood-floor-blue'
                         title="Our Story"
@@ -51,7 +52,9 @@ function Story() {
                                 <p>
                                     God is still writing our story and we would love for you to be a part of it!
                                 </p>
-                            </div>}/>
+                            </div>
+                        }
+                    />
                 </div>
             </div>
         </div>

@@ -5,7 +5,7 @@ import PhotoCard from './PhotoCard'
 
 function Home() {
     return (
-        <div className='mb-12'>
+        <div className='mt-[58px] sm:mt-[74px]'>
             <div>
                 <div className='bg-flaking-paint z-0 h-[500px] relative overflow-hidden bg-no-repeat bg-cover bg-center'>
                     <div className='absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed bg-black bg-opacity-75'>
@@ -41,17 +41,19 @@ function Home() {
                 </div>
             </div>
 
-            <div className='my-8 sm:my-16 mx-8 text-center text-white px-6 md:px-12'>
+            <div className='mt-8 sm:mt-8 mx-8 text-center text-white px-6 md:px-12'>
                 <h1 className='text-[#4DB1CC] text-3xl sm:text-5xl md:text-6xl font-bold text-center'>When:</h1>
                 <h1 className='text-[#4DB1CC] text-3xl sm:text-5xl md:text-6xl font-bold text-center'>Sundays @10</h1>
-                <h1 className='mt-8 -mb-10 text-[#4DB1CC] text-3xl sm:text-5xl md:text-6xl font-bold text-center'>Where:</h1>
+                {/* <h1 className='mt-8 -mb-10 text-[#4DB1CC] text-3xl sm:text-5xl md:text-6xl font-bold text-center'>Where:</h1> */}
                 {/* <h1 className='text-[#4DB1CC] text-3xl sm:text-5xl md:text-6xl font-bold text-center'>2976 Ivanrest Ave SW</h1> */}
             </div>
 
-            <DataCard/>
+            <div className='flex justify-center'>
+                <DataCard/>
+            </div>
 
             {/* content container */}
-            <div className='mx-auto px-8 flex flex-col py-4 items-center'>
+            <div className='mb-12 mx-auto px-8 flex flex-col py-4 items-center'>
                 <div className='max-w-[668px]'>
                     <div>
                         {/* <h1 className='text-[#D55A1E] text-4xl sm:text-5xl md:text-8xl font-bold text-center'>Canvas Church</h1> */}

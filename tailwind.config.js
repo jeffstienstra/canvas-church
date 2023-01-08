@@ -23,6 +23,11 @@ module.exports = {
         'wood-floor-blue': "url('assets/wood-floor-blue-killari-hotaru.jpg')",
         'wood-floor-blue-wide': "url('assets/wood-floor-blue-wide-killari-hotaru.jpg')",
         'plaster-blue': "url('assets/plaster-blue-killari-hotaru.jpg')",
+      },
+      colors: {
+        'canvas-orange': '#D55A1E',
+        'canvas-blue': '#4DB1CC',
+        'canvas-grey': '#5A707A',
       }
     },
   },

@@ -10,7 +10,9 @@ import {Routes, Route} from 'react-router-dom'
 function App() {
   return (
     <>
+    <div className='relative top-0 mb-[58px] sm:mb-[74px]'>
       <Navigation />
+    </div>
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/about' element={<About/>}/>

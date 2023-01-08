@@ -3,7 +3,7 @@ import PhotoCard from './PhotoCard'
 
 function Sundays() {
     return (
-        <div className='w-full h-screen'>
+        <>
 
             {/* container */}
             <div className='mx-auto px-8 flex flex-col py-8 items-center h-full'>
@@ -70,7 +70,7 @@ function Sundays() {
                     </div>
                 </div>
             </div>
-        </div>
+        </>
     )
 }
 

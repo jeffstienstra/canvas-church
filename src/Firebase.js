@@ -5,7 +5,7 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyAiAx69PuAXhrB0Lcyp_LZI6VoOjqGN33k",
+    apiKey: process.env.FIREBASE_CONFIG_API_KEY,
     authDomain: "canvas-church-484a2.firebaseapp.com",
     projectId: "canvas-church-484a2",
     storageBucket: "canvas-church-484a2.appspot.com",
