@@ -14,39 +14,39 @@ const about = [
         href: '/story',
         icon: FaBook,
     },
-    {
-        name: 'Our Team',
-        // description: 'Friendly Faces',
-        href: '/about',
-        icon: ImAddressBook,
-    },
-    {
-        name: 'What We Believe',
-        // description: 'Theology Guides Actions',
-        href: '/believe',
-        icon: FaBookMedical,
-    },
+    // {
+    //     name: 'Our Team',
+    //     // description: 'Friendly Faces',
+    //     href: '/about',
+    //     icon: ImAddressBook,
+    // },
+    // {
+    //     name: 'What We Believe',
+    //     // description: 'Theology Guides Actions',
+    //     href: '/believe',
+    //     icon: FaBookMedical,
+    // },
     ]
 
 const media = [
-    {
-        name: 'Sermons',
-        // description: 'Relax and listen to Sundays gone by',
-        href: '/media',
-        icon: HiChatBubbleBottomCenterText,
-    },
-    {
-        name: 'Newsletters',
-        // description: 'Catch up on the latest community news',
-        href: 'media',
-        icon: FaNewspaper,
-    },
-    {
-        name: 'Resources',
-        // description: 'Help is out there',
-        href: 'media',
-        icon: ImBooks,
-    },
+    // {
+    //     name: 'Sermons',
+    //     // description: 'Relax and listen to Sundays gone by',
+    //     href: '/media',
+    //     icon: HiChatBubbleBottomCenterText,
+    // },
+    // {
+    //     name: 'Newsletters',
+    //     // description: 'Catch up on the latest community news',
+    //     href: 'media',
+    //     icon: FaNewspaper,
+    // },
+    // {
+    //     name: 'Resources',
+    //     // description: 'Help is out there',
+    //     href: 'media',
+    //     icon: ImBooks,
+    // },
 ]
 
 const community = [
@@ -102,7 +102,8 @@ export default function Example() {
                         />
                         </a>
                     </div>
-                    <div className='-my-2 -mr-2 md:hidden'>
+                    {/* TODO: desktop nav - always hidden for now */}
+                    <div className='-my-2 -mr-2'>
                         <Popover.Button className='inline-flex items-center justify-center rounded-md
                             bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500
                             focus:outline-none focus:ring-2 focus:ring-inset focus:ring-[#4DB1CC]'>
@@ -110,7 +111,7 @@ export default function Example() {
                         <FaBars className='h-6 w-6' aria-hidden='true' />
                         </Popover.Button>
                     </div>
-                    <Popover.Group as='nav' className='hidden space-x-10 md:flex md:justify-center'>
+                    <Popover.Group as='nav' className='hidden'>
                         {/* normal menu links */}
                         <a href='/' className='text-base font-medium text-gray-500 hover:text-gray-900
                             rounded-md focus:outline-none focus:ring-2 focus:ring-[#4DB1CC] focus:ring-offset-2'>
@@ -185,7 +186,7 @@ export default function Example() {
                                 </>
                             )}
                         </Popover>
-                        <Popover className='relative'>
+                        {/* <Popover className='relative'>
                         {({ open }) => (
                             <>
                             <Popover.Button
@@ -312,7 +313,7 @@ export default function Example() {
                                 </Transition>
                                 </>
                             )}
-                        </Popover>
+                        </Popover> */}
                     </Popover.Group>
                 </div>
             </div>
@@ -326,7 +327,7 @@ export default function Example() {
                 leaveFrom='opacity-100 scale-100'
                 leaveTo='opacity-0 scale-95'
                 >
-                <Popover.Panel focus className='popover-panel absolute inset-x-0 top-0 origin-top-right transform p-2 transition md:hidden'>
+                <Popover.Panel focus className='popover-panel absolute inset-x-0 top-0 origin-top-right transform p-2 transition'>
                     <div className='divide-y-2 divide-gray-50 rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5'>
                         <div className='px-5 pt-5 pb-6'>
                             <div className='flex items-center justify-between'>
@@ -423,7 +424,7 @@ export default function Example() {
                                     </>
                                 )}
                             </Popover>
-                            <Popover className='flex flex-col justify-center items-center mb-2 popover'>
+                            {/* <Popover className='flex flex-col justify-center items-center mb-2 popover'>
                                 {({ open }) => (
                                     <>
                                         <Popover.Button
@@ -550,7 +551,7 @@ export default function Example() {
                                         </Transition>
                                     </>
                                 )}
-                            </Popover>
+                            </Popover> */}
                         </div>
                     </div>
                 </Popover.Panel>

@@ -6,7 +6,7 @@ function Story() {
         <div className='bg-gradient-to-b from-[#7f9dab] to-[#6b8592]'>
 
             {/* container */}
-            <div className='mx-auto px-8 flex flex-col py-8 pb-16 items-center'>
+            <div className='mt-12 md:mt-16 mx-auto px-8 flex flex-col py-8 pb-16 items-center'>
                 <div className='max-w-[668px] mb-6'>
                     <PhotoCard image='bg-wood-floor-blue'
                         title="Our Story"
