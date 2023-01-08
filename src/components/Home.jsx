@@ -17,7 +17,7 @@ function Home() {
                                 >canvas <span className='text-[#4DB1CC] text-6xl sm:text-6xl md:text-8xl font-bold text-center'>church</span></h1>
                                 <h1 className='text-3xl md:text-6xl font-bold tracking-tight'>a community for all</h1>
                                 <div className='m-8'>
-                                    <h1 className='text-white text-xl sm:text-4xl md:text-4xl font-bold text-center'>sundays @10</h1>
+                                    <h1 className='text-white text-xl sm:text-2xl md:text-4xl font-bold text-center'>sundays @10</h1>
                                 </div>
                                 <div className='flex flex-col justify-center items-center flex-wrap'>
                                     <div className='m-4'>
