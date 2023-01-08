@@ -1,12 +1,12 @@
 import React, {useEffect, useState} from 'react'
 
 function PhotoCard({image, title, subtitle, marginTop, paddingY, extraClasses}) {
-    const [parentClasses, setParentClasses] = useState('bg-flaking-paint2 mt-10 relative block overflow-hidden rounded-xl bg-cover bg-center bg-no-repeat cursor-default');
-    const [containerClasses, setContainerClasses] = useState('relative bg-black bg-opacity-60 px-3 py-20 text-white text-center');
+    const [parentClasses, setParentClasses] = useState('');
+    const [containerClasses, setContainerClasses] = useState('');
 
 useEffect(() => {
     setParentClasses(`${image} ${marginTop} relative block overflow-hidden rounded-xl bg-cover bg-center bg-no-repeat cursor-default`)
-    setContainerClasses(`relative bg-black bg-opacity-70 px-3 ${paddingY} text-white text-center`)
+    setContainerClasses(`relative bg-black bg-opacity-80 px-3 ${paddingY} text-white text-center`)
     // eslint-disable-next-line react-hooks/exhaustive-deps
 }, [])
 

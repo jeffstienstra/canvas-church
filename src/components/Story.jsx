@@ -3,8 +3,7 @@ import PhotoCard from './PhotoCard'
 
 function Story() {
     return (
-        <div className='
-            bg-gradient-to-b from-[#7f9dab] to-[#6b8592]'>
+        <div className='bg-gradient-to-b from-[#7f9dab] to-[#6b8592]'>
 
             {/* container */}
             <div className='mx-auto px-8 flex flex-col py-8 pb-16 items-center'>
