@@ -3,11 +3,12 @@ import PhotoCard from './PhotoCard'
 
 function Sundays() {
     return (
-        <>
+        <div className='bg-wood-floor-blue bg-center'>
 
             {/* container */}
             <div className='mt-12 md:mt-16 mx-auto px-8 flex flex-col py-8 items-center h-full
-                bg-gradient-to-b from-[#7f9dab] to-[#6b8592]'>
+                bg-cyan-500 bg-opacity-20'>
+                    {/* bg-gradient-to-b from-[#7f9dab] to-[#6b8592] */}
                 <div className='max-w-[668px]'>
                     <PhotoCard image='bg-flaking-paint2'
                         title="What Are Sundays Like?"
@@ -71,7 +72,7 @@ function Sundays() {
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     )
 }
 
