@@ -88,7 +88,7 @@ function classNames(...classes) {
 export default function Example() {
     return (
         <Popover className='fixed z-40 top-0 w-screen bg-white'>
-            <div className='mx-auto max-w-[668px] px-4 sm:px-6'>
+            <div className='mx-auto px-4 sm:px-6'>
                 <div className='flex items-center justify-between border-b-2
                     border-gray-100 py-3 md:space-x-10'>
                     <div className='flex justify-between sm:w-0 sm:flex-1'>
@@ -328,8 +328,8 @@ export default function Example() {
                 leaveTo='opacity-0 scale-95'
                 >
                 <Popover.Panel focus className='popover-panel absolute inset-x-0 top-0 origin-top-right transform p-2 transition'>
-                    <div className='divide-y-2 divide-gray-50 rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5'>
-                        <div className='px-5 pt-5 pb-6'>
+                    <div className='sm:mx-4 divide-y-2 divide-gray-50 rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5'>
+                        <div className='p-5'>
                             <div className='flex items-center justify-between'>
                                 <div className='rounded-md focus:outline-none focus:ring-2 focus:ring-[#4DB1CC] focus:ring-offset-2'>
                                     <a href='/'>

@@ -22,7 +22,7 @@ function DataCard() {
                         Where to find us
                     </h3>
                     <p className='mt-2 text-md leading-relaxed text-gray-500'>
-                    We're located on the corner of Ivanrest and 30th St, just south of 28th St.
+                    We're located on the corner of Ivanrest and 30th, just south of 28th St.
                     There's plenty of parking along the side and rear of the building.
                     Come on in through the doors facing 30th Street. See you there!
                     </p>

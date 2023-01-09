@@ -17,8 +17,8 @@ function Sundays() {
                             <div className='my-4 px-4 sm:px-8 sm:text-xl'>
                                 <p>
                                     Our Sunday gatherings feel a lot like an informal family gathering. Our service starts at 10am but most people don't
-                                    start arriving until about 5 mins before and keep coming in through the first part of worship. We don't care, we know
-                                    how hard it can be to get out the door.
+                                    start arriving until about 5 mins before and keep coming in through the first part of worship. We know
+                                    how hard it can be to get out the door so we'll see you when you get here.
                                 </p>
                                 <br />
                                 <p>
