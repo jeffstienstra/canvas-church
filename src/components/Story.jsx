@@ -7,7 +7,7 @@ function Story() {
 
             {/* container */}
             <div className='mt-12 md:mt-16 mx-auto px-8 flex flex-col py-8 pb-16 items-center
-                bg-cyan-500 bg-opacity-20'>
+                bg-white bg-opacity-30'>
                 <div className='max-w-[668px] mb-6'>
                     <PhotoCard image=''
                         title="Our Story"
