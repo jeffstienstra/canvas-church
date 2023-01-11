@@ -23,8 +23,8 @@ function Home() {
                                 <div className='m-4'>
                                     <a className='px-5 py-3
                                         border-transparent border-none bg-[#D55A1E]
-                                        font-medium text-sm leading-snug uppercase rounded-full shadow-md
-                                        hover:bg-opacity-100 focus:border-white focus:ring-0
+                                        font-medium text-sm leading-snug uppercase rounded-full shadow-lg
+                                        hover:bg-[#d76e3a] focus:border-white focus:ring-0
                                         transition duration-150 ease-in-out'
                                         href='https://www.facebook.com/canvaschurchgr.org' target='_blank' rel='noreferrer' role='button'
                                         >Live Stream</a>
@@ -32,7 +32,7 @@ function Home() {
                                 <div className='m-4 mt-6'>
                                     <a className='px-5 py-3
                                         bg-transparent border-transparent border-2 hover:border-white
-                                        font-medium text-sm leading-snug uppercase rounded-full shadow-md
+                                        font-medium text-sm leading-snug uppercase rounded-full
                                         hover:bg-opacity-100 focus:border-white focus:ring-0
                                         transition duration-150 ease-in-out'
                                         href='/sundays' role='button'

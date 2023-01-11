@@ -6,7 +6,7 @@ function Sundays() {
         <div className='bg-wood-floor-blue'>
 
             {/* container */}
-            <div className='mt-12 md:mt-16 mx-auto px-8 flex flex-col py-8 items-center h-full
+            <div className='mt-16 md:mt-16 mx-auto px-8 flex flex-col py-8 items-center h-full
                 bg-white bg-opacity-30'>
                     {/* bg-gradient-to-b from-[#7f9dab] to-[#6b8592] */}
                 <div className='max-w-[668px]'>

@@ -28,6 +28,9 @@ module.exports = {
         'canvas-orange': '#D55A1E',
         'canvas-blue': '#4DB1CC',
         'canvas-grey': '#5A707A',
+      },
+      boxShadow: {
+        'lg': '0 10px 15px -2px rgba(0, 0, 0, 0.3)',
       }
     },
   },

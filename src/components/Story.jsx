@@ -6,15 +6,15 @@ function Story() {
         <div className='bg-wood-floor-blue'>
 
             {/* container */}
-            <div className='mt-12 md:mt-16 mx-auto px-8 flex flex-col py-8 pb-16 items-center
+            <div className='mt-8 sm:mt-16 mx-auto px-8 flex flex-col py-8 pb-20 items-center
                 bg-white bg-opacity-30'>
                 <div className='max-w-[668px] mb-6'>
                     <PhotoCard image=''
                         title="Our Story"
-                        marginTop='mt-4'
+                        marginTop='mt-8'
                         paddingY='py-12'
                         subtitle={
-                            <div className='my-4 px-4 sm:px-16 sm:my-12 sm:text-xl'>
+                            <div className='my-4 px-12 sm:px-8 sm:my-12 sm:text-xl'>
                                 <p>
                                     We started out in 2019 as a church plant - part of a larger church. As we grew and learned from our community how to
                                     live out the grace of God, we grew into a different understanding than our parent church and classis.
