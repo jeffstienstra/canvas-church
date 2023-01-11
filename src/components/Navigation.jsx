@@ -1,6 +1,6 @@
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
-import {FaTimes, FaEnvelope, FaLaugh, FaHandshake, FaNewspaper, FaBookMedical, FaBook, FaChevronDown, FaBars} from 'react-icons/fa'
+import {FaTimes, FaEnvelope, FaLaugh, FaPaperPlane, FaHandshake, FaNewspaper, FaBookMedical, FaBook, FaChevronDown, FaBars, FaEnvelopeOpen} from 'react-icons/fa'
 import {HiChatBubbleBottomCenterText, HiChatBubbleLeftRight} from 'react-icons/hi2'
 import {BsCalendar2EventFill} from 'react-icons/bs'
 import {ImBooks, ImAddressBook} from 'react-icons/im'
@@ -76,8 +76,8 @@ const community = [
     },
 ]
 const callsToAction = [
-{ name: 'Questions? Send us a note!', href: '/contact', icon: FaEnvelope },
-// { name: 'Suggestions? Click here!', href: '/contact', icon: FaEnvelope },
+{ name: 'Questions? Send us a note!', href: '/contact', icon: FaPaperPlane },
+{ name: 'Sign up for our newsletter', href: '/contact', icon: FaNewspaper },
 // { name: 'Want to get involved? Click here!', href: '/contact', icon: FaEnvelope },
 ]
 
@@ -102,7 +102,6 @@ export default function Example() {
                         />
                         </a>
                     </div>
-                    {/* TODO: desktop nav - always hidden for now */}
                     <div className='-my-2 -mr-2'>
                         <Popover.Button className='inline-flex items-center justify-center rounded-md
                             bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500
@@ -111,210 +110,6 @@ export default function Example() {
                         <FaBars className='h-6 w-6' aria-hidden='true' />
                         </Popover.Button>
                     </div>
-                    <Popover.Group as='nav' className='hidden'>
-                        {/* normal menu links */}
-                        <a href='/' className='text-base font-medium text-gray-500 hover:text-gray-900
-                            rounded-md focus:outline-none focus:ring-2 focus:ring-[#4DB1CC] focus:ring-offset-2'>
-                            Home
-                        </a>
-                        <a href='/sundays' className='text-base font-medium text-gray-500 hover:text-gray-900
-                            rounded-md focus:outline-none focus:ring-2 focus:ring-[#4DB1CC] focus:ring-offset-2'>
-                            Sundays
-                        </a>
-
-                        {/* fly-out menu links */}
-                        <Popover className='relative'>
-                            {({ open }) => (
-                                <>
-                                {/* About dropdown */}
-                                    <Popover.Button
-                                        className={classNames(
-                                        open ? 'text-gray-900' : 'text-gray-500',
-                                        'group inline-flex items-center rounded-md bg-white text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-[#4DB1CC] focus:ring-offset-2'
-                                        )}
-                                        >
-                                        <span>About</span>
-                                        <FaChevronDown
-                                        className={classNames(
-                                            open ? 'text-gray-600' : 'text-gray-400',
-                                            'ml-2 h-5 w-5 group-hover:text-gray-500'
-                                        )}
-                                        aria-hidden='true'
-                                        />
-                                    </Popover.Button>
-
-                                    <Transition
-                                        as={Fragment}
-                                        enter='transition ease-out duration-200'
-                                        enterFrom='opacity-0 translate-y-1'
-                                        enterTo='opacity-100 translate-y-0'
-                                        leave='transition ease-in duration-150'
-                                        leaveFrom='opacity-100 translate-y-0'
-                                        leaveTo='opacity-0 translate-y-1'
-                                    >
-                                        <Popover.Panel className='absolute z-10 -ml-4 mt-3 w-screen max-w-md transform px-2 sm:px-0 md:left-1/2 lg:ml-0 md:-translate-x-1/2'>
-                                            <div className='overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5'>
-                                                <div className='relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8'>
-                                                {about.map((item) => (
-                                                    <a
-                                                    key={item.name}
-                                                    href={item.href}
-                                                    className='-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50'
-                                                    >
-                                                    <item.icon className='h-6 w-6 flex-shrink-0 text-[#4DB1CC]' aria-hidden='true' />
-                                                    <div className='ml-4'>
-                                                        <p className='text-base font-medium text-gray-900'>{item.name}</p>
-                                                        <p className='mt-1 text-sm text-gray-500'>{item.description}</p>
-                                                    </div>
-                                                    </a>
-                                                ))}
-                                                </div>
-                                                <div className='space-y-6 bg-gray-50 px-5 py-5 sm:flex sm:space-y-0 sm:space-x-10 sm:px-8'>
-                                                    <div key={callsToAction[0].name} className='flow-root'>
-                                                    <a
-                                                        href={callsToAction[0].href}
-                                                        className='-m-3 flex items-center rounded-md p-3 text-base font-medium text-gray-900 hover:bg-gray-100'
-                                                    >
-                                                        <FaEnvelope className='h-6 w-6 flex-shrink-0 text-gray-400' aria-hidden='true' />
-                                                        <span className='ml-3'>{callsToAction[0].name}</span>
-                                                    </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </Popover.Panel>
-                                    </Transition>
-                                </>
-                            )}
-                        </Popover>
-                        {/* <Popover className='relative'>
-                        {({ open }) => (
-                            <>
-                            <Popover.Button
-                                className={classNames(
-                                open ? 'text-gray-900' : 'text-gray-500',
-                                'group inline-flex items-center rounded-md bg-white text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-[#4DB1CC] focus:ring-offset-2'
-                                )}
-                            >
-                                <span>Media</span>
-                                <FaChevronDown
-                                className={classNames(
-                                    open ? 'text-gray-600' : 'text-gray-400',
-                                    'ml-2 h-5 w-5 group-hover:text-gray-500'
-                                )}
-                                aria-hidden='true'
-                                />
-                            </Popover.Button>
-
-                            <Transition
-                                as={Fragment}
-                                enter='transition ease-out duration-200'
-                                enterFrom='opacity-0 translate-y-1'
-                                enterTo='opacity-100 translate-y-0'
-                                leave='transition ease-in duration-150'
-                                leaveFrom='opacity-100 translate-y-0'
-                                leaveTo='opacity-0 translate-y-1'
-                            >
-                                <Popover.Panel className='absolute z-10 -ml-4 mt-3 w-screen max-w-md transform px-2 sm:px-0 md:left-1/2 lg:ml-0 md:-translate-x-1/2'>
-                                <div className='overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5'>
-                                    <div className='relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8'>
-                                    {media.map((item) => (
-                                        <a
-                                        key={item.name}
-                                        href={item.href}
-                                        className='-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50'
-                                        >
-                                        <item.icon className='h-6 w-6 flex-shrink-0 text-[#4DB1CC]' aria-hidden='true' />
-                                        <div className='ml-4'>
-                                            <p className='text-base font-medium text-gray-900'>{item.name}</p>
-                                            <p className='mt-1 text-sm text-gray-500'>{item.description}</p>
-                                        </div>
-                                        </a>
-                                    ))}
-                                    </div>
-                                    <div className='space-y-6 bg-gray-50 px-5 py-5 sm:flex sm:space-y-0 sm:space-x-10 sm:px-8'>
-                                    {callsToAction.map((item) => (
-                                        <div key={item.name} className='flow-root'>
-                                        <a
-                                            href={item.href}
-                                            className='-m-3 flex items-center rounded-md p-3 text-base font-medium text-gray-900 hover:bg-gray-100'
-                                        >
-                                            <item.icon className='h-6 w-6 flex-shrink-0 text-gray-400' aria-hidden='true' />
-                                            <span className='ml-3'>{item.name}</span>
-                                        </a>
-                                        </div>
-                                    ))}
-                                    </div>
-                                </div>
-                                </Popover.Panel>
-                            </Transition>
-                            </>
-                            )}
-                        </Popover>
-                        <Popover className='relative'>
-                            {({ open }) => (
-                                <>
-                                <Popover.Button
-                                    className={classNames(
-                                    open ? 'text-gray-900' : 'text-gray-500',
-                                    'group inline-flex items-center rounded-md bg-white text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-[#4DB1CC] focus:ring-offset-2'
-                                    )}
-                                >
-                                    <span>Community</span>
-                                    <FaChevronDown
-                                    className={classNames(
-                                        open ? 'text-gray-600' : 'text-gray-400',
-                                        'ml-2 h-5 w-5 group-hover:text-gray-500'
-                                    )}
-                                    aria-hidden='true'
-                                    />
-                                </Popover.Button>
-
-                                <Transition
-                                    as={Fragment}
-                                    enter='transition ease-out duration-200'
-                                    enterFrom='opacity-0 translate-y-1'
-                                    enterTo='opacity-100 translate-y-0'
-                                    leave='transition ease-in duration-150'
-                                    leaveFrom='opacity-100 translate-y-0'
-                                    leaveTo='opacity-0 translate-y-1'
-                                >
-                                    <Popover.Panel className='absolute z-10 -ml-4 mt-3 w-screen max-w-md transform px-2 sm:px-0 md:left-1/2 lg:ml-0 md:-translate-x-1/2'>
-                                    <div className='overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5'>
-                                        <div className='relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8'>
-                                        {community.map((item) => (
-                                            <a
-                                            key={item.name}
-                                            href={item.href}
-                                            className='-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50'
-                                            >
-                                            <item.icon className='h-6 w-6 flex-shrink-0 text-[#4DB1CC]' aria-hidden='true' />
-                                            <div className='ml-4'>
-                                                <p className='text-base font-medium text-gray-900'>{item.name}</p>
-                                                <p className='mt-1 text-sm text-gray-500'>{item.description}</p>
-                                            </div>
-                                            </a>
-                                        ))}
-                                        </div>
-                                        <div className='space-y-6 bg-gray-50 px-5 py-5 sm:flex sm:space-y-0 sm:space-x-10 sm:px-8'>
-                                        {callsToAction.map((item) => (
-                                            <div key={item.name} className='flow-root'>
-                                            <a
-                                                href={item.href}
-                                                className='-m-3 flex items-center rounded-md p-3 text-base font-medium text-gray-900 hover:bg-gray-100'
-                                            >
-                                                <item.icon className='h-6 w-6 flex-shrink-0 text-gray-400' aria-hidden='true' />
-                                                <span className='ml-3'>{item.name}</span>
-                                            </a>
-                                            </div>
-                                        ))}
-                                        </div>
-                                    </div>
-                                    </Popover.Panel>
-                                </Transition>
-                                </>
-                            )}
-                        </Popover> */}
-                    </Popover.Group>
                 </div>
             </div>
 
@@ -329,7 +124,7 @@ export default function Example() {
                 >
                 <Popover.Panel focus className='popover-panel absolute inset-x-0 top-0 origin-top-right transform p-2 transition'>
                     <div className='sm:mx-4 divide-y-2 divide-gray-50 rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5'>
-                        <div className='p-5'>
+                        <div className='flex flex-col justify-center p-5'>
                             <div className='flex items-center justify-between'>
                                 <div className='rounded-md focus:outline-none focus:ring-2 focus:ring-[#4DB1CC] focus:ring-offset-2'>
                                     <a href='/'>
@@ -353,31 +148,30 @@ export default function Example() {
                             <Popover className='flex flex-col justify-center items-center mb-2 popover'>
                                 {({ open }) => (
                                     <>
-                                        <a href='/' className='mb-2 text-base font-medium text-gray-500 hover:text-gray-900
+                                        <a href='/' className='mb-2 text-lg font-medium text-gray-500 hover:text-gray-900
                                             rounded-md focus:outline-none focus:ring-2 focus:ring-[#4DB1CC] focus:ring-offset-2'>
                                             Home
                                         </a>
-                                        <a href='/sundays' className='text-base mb-2 font-medium text-gray-500 hover:text-gray-900
+                                        <a href='/sundays' className='mb-2 text-lg font-medium text-gray-500 hover:text-gray-900
                                             rounded-md focus:outline-none focus:ring-2 focus:ring-[#4DB1CC] focus:ring-offset-2'>
                                             Sundays
                                         </a>
                                         <Popover.Button
                                             className={classNames(
                                             open ? 'text-gray-900' : 'text-gray-500',
-                                            'group inline-flex items-center rounded-md bg-white text-base',
+                                            'group inline-flex items-center rounded-md bg-white text-lg',
                                             'font-medium hover:text-gray-900 focus:outline-none focus:ring-2',
                                             'focus:ring-[#4DB1CC] focus:ring-offset-2'
                                             )}
                                         >
-                                            <div className='flex'>
+                                            <div className='flex font-medium items-center'>
                                                 <span>About</span>
                                                 <FaChevronDown
-                                                className={classNames(
-                                                    open ? 'text-gray-600' : 'text-gray-400',
-                                                    'ml-2 mt-0.5 h-5 w-5 group-hover:text-gray-500'
-                                                )}
-                                                aria-hidden='true'
-                                            />
+                                                    className={classNames(
+                                                        open ? 'text-gray-600' : 'text-gray-400',
+                                                        'ml-2 mt-0.5 h-5 w-5 group-hover:text-gray-500'
+                                                    )}
+                                                    aria-hidden='true' />
                                             </div>
                                         </Popover.Button>
 
@@ -399,25 +193,13 @@ export default function Example() {
                                                             >
                                                             <item.icon className='h-6 w-6 flex-shrink-0 text-[#4DB1CC]' aria-hidden='true' />
                                                             <div className='ml-4'>
-                                                                <p className='text-base font-medium text-gray-900'>{item.name}</p>
+                                                                <p className='text-lg font-medium text-gray-900'>{item.name}</p>
                                                                 <p className='mt-1 text-sm text-gray-500'>{item.description}</p>
                                                             </div>
                                                             </a>
                                                         ))}
                                                     </div>
-                                                    <div className='space-y-6 bg-gray-50 px-5 py-5 sm:flex sm:space-y-0 sm:space-x-10 sm:px-8'>
-                                                        {callsToAction.map((item) => (
-                                                            <div key={item.name} className='flow-root'>
-                                                            <a
-                                                                href={item.href}
-                                                                className='-m-3 flex items-center rounded-md p-3 text-base font-medium text-gray-900 hover:bg-gray-100'
-                                                            >
-                                                                <item.icon className='h-6 w-6 flex-shrink-0 text-gray-400' aria-hidden='true' />
-                                                                <span className='ml-3'>{item.name}</span>
-                                                            </a>
-                                                            </div>
-                                                        ))}
-                                                    </div>
+
                                                 </div>
                                             </Popover.Panel>
                                         </Transition>
@@ -552,6 +334,21 @@ export default function Example() {
                                     </>
                                 )}
                             </Popover> */}
+                            <div className='bg-gray-50 flex items-center justify-center -m-5 mt-5 rounded-lg'>
+                                <div className='my-2'>
+                                    {callsToAction.map((item) => (
+                                        <div key={item.name} className='flow-root'>
+                                            <a href={item.href}
+                                                className='flex items-center p-4 m-1 rounded-md
+                                                    text-base font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-100'
+                                            >
+                                                <item.icon className='h-6 w-6 flex-shrink-0 text-gray-400' aria-hidden='true' />
+                                                <span className='ml-3'>{item.name}</span>
+                                            </a>
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </Popover.Panel>

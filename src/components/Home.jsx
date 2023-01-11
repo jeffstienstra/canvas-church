@@ -1,11 +1,12 @@
 import React from 'react'
 import DataCard from './DataCard'
 import PhotoCard from './PhotoCard'
+import LiveStream from './LiveStream'
 
 function Home() {
     return (
         <div className='flex flex-col justify-center items-center w-full
-            bg-gradient-to-b from-[#7f9dab] to-[#6b8592] pb-16'>
+            bg-gradient-to-b from-[#7f9dab] to-[#6b8592] pb-20'>
             <div className='w-full h-screen z-0
                 bg-flaking-paint bg-no-repeat bg-cover bg-center'>
                 <div className='h-full
@@ -47,13 +48,13 @@ function Home() {
                 <PhotoCard
                     image='bg-flaking-paint'
                     title="why the name Canvas church?"
-                    marginTop='mt-4'
+                    marginTop='mt-8 md:mt-16'
                     paddingY='py-8'
                     subtitle={
                         <div className='my-4 px-4 sm:px-8 sm:text-xl'>
                             <p className='mt-4'>
                     The word 'canvas' can bring many different things to mind:
-                </p>
+                    </p>
                     <ul className='list-inside list-disc pl-2'>
                         <li className='mt-2 indent-[-10px]'>
                             A canvas for painting: either blank with infinite possibilities or a completed masterpiece with a unique beauty
@@ -69,20 +70,20 @@ function Home() {
                     <p className='my-4 text-justify'>
                     These ideas of what a canvas can be reminds us not only of what we want our community to
                     be but also of who we already are.
-                </p>
-                <p className='my-4 text-justify'>
-                    Canvas Church wants to be a place where the complete beauty of each person is recognized and celebrated while looking forward
-                    to the ways that God will bring us together to create infinitely new and beautiful things as a community.
-                </p>
-                <p className='my-4 text-justify'>
-                    We want to be a place where anyone can come and find shelter, refuge, and rest from the pain and brokenness of the world
-                    while also being a place where we can celebrate the ways in which God’s faithfulness has brought healing, joy, and energy.
-                </p>
-                <p className='my-4 text-justify'>
-                    We want to be present in our community, connected with our neighbors, and helping to meet the needs of those around us. Not
-                    with some ulterior motive, but out of the desire to love others simply because they are.
-                </p>
-                </div>}/>
+                    </p>
+                    <p className='my-4 text-justify'>
+                        Canvas Church wants to be a place where the complete beauty of each person is recognized and celebrated while looking forward
+                        to the ways that God will bring us together to create infinitely new and beautiful things as a community.
+                    </p>
+                    <p className='my-4 text-justify'>
+                        We want to be a place where anyone can come and find shelter, refuge, and rest from the pain and brokenness of the world
+                        while also being a place where we can celebrate the ways in which God’s faithfulness has brought healing, joy, and energy.
+                    </p>
+                    <p className='my-4 text-justify'>
+                        We want to be present in our community, connected with our neighbors, and helping to meet the needs of those around us. Not
+                        with some ulterior motive, but out of the desire to love others simply because they are.
+                    </p>
+                    </div>}/>
             </div>
         </div>
     )
