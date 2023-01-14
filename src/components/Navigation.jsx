@@ -78,7 +78,7 @@ const community = [
 const callsToAction = [
     {
         name: 'Sign up for our newsletter',
-        href: 'https:/canvaschurchgr.us14.list-manage.com/subscribe?u=c49d47dd6ee3ce6d1017f7b21&id=35ad903272',
+        href: 'https://canvaschurchgr.us14.list-manage.com/subscribe?u=c49d47dd6ee3ce6d1017f7b21&id=35ad903272',
         icon: FaNewspaper,
         target: '_blank',
         rel: 'noreferrer',
