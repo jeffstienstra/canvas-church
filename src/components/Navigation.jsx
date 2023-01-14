@@ -1,6 +1,6 @@
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
-import {FaTimes, FaEnvelope, FaVideo, FaLaugh, FaPaperPlane, FaHandshake, FaNewspaper, FaBookMedical, FaBook, FaChevronDown, FaBars, FaEnvelopeOpen} from 'react-icons/fa'
+import {FaTimes, FaHandPaper, FaEnvelope, FaVideo, FaLaugh, FaPaperPlane, FaHandshake, FaNewspaper, FaBookMedical, FaBook, FaChevronDown, FaBars, FaEnvelopeOpen} from 'react-icons/fa'
 import {HiChatBubbleBottomCenterText, HiChatBubbleLeftRight} from 'react-icons/hi2'
 import {BsCalendar2EventFill} from 'react-icons/bs'
 import {ImBooks, ImAddressBook} from 'react-icons/im'
@@ -84,7 +84,7 @@ const callsToAction = [
         rel: 'noreferrer',
         role: 'button' },
     { name: 'Questions? Send us a note!', href: '/contact', icon: FaPaperPlane },
-// { name: 'Want to get involved? Click here!', href: '/contact', icon: FaEnvelope },
+// { name: 'Get involved!', href: '/contact', icon: FaHandshake },
 ]
 
 function classNames(...classes) {
@@ -157,6 +157,14 @@ export default function Example() {
                                         <a href='/' className='w-[90%] sm:w-fit mb-2 text-lg font-medium text-gray-500 hover:text-gray-900
                                             rounded-md focus:outline-none focus:ring-2 focus:ring-canvas-blue focus:ring-offset-2'>
                                             Home
+                                        </a>
+                                        <a href='https://mailchi.mp/8cf7731c9397/canvas-church-news-for-all-9530605?e=c43785b8a1'
+                                            target='_blank'
+                                            rel='noreferrer'
+                                            role='button'
+                                            className='w-[90%] sm:w-fit mb-2 text-lg font-medium text-gray-500 hover:text-gray-900
+                                            rounded-md focus:outline-none focus:ring-2 focus:ring-canvas-blue focus:ring-offset-2'>
+                                            Newsletter
                                         </a>
                                         <a href='/livestream' className='w-[90%] sm:w-fit mb-2 text-lg font-medium text-gray-500 hover:text-gray-900
                                             rounded-md focus:outline-none focus:ring-2 focus:ring-canvas-blue focus:ring-offset-2'>
