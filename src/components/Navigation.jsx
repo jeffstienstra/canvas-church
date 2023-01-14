@@ -9,12 +9,6 @@ import Logo from '../assets/canvas-church-logo-transparent.svg'
 
 const about = [
     {
-        name: 'Live Stream',
-        description: 'Sundays @10am',
-        href: '/liveStream',
-        icon: FaVideo,
-    },
-    {
         name: 'Our Story',
         // description: 'Stories Matter',
         href: '/story',
