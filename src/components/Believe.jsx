@@ -7,11 +7,11 @@ const Believe = () => {
             {/* title section */}
             <div className='mx-auto px-8 flex flex-col py-8 items-center h-full'>
                 <div className='flex'>
-                    <h1 className='text-[#D55A1E] text-4xl sm:text-5xl md:text-8xl font-bold text-center'>What We Believe</h1>
+                    <h1 className='text-canvas-orange text-4xl sm:text-5xl md:text-8xl font-bold text-center'>What We Believe</h1>
                     <div className='flex justify-center'>
-                        <h2 className='flex text-[#4DB1CC] text-center text-2xl sm:text-3xl md:text-4xl'>Faith is</h2>
-                        <h2 className='text-[#D55A1E] text-center text-2xl sm:text-3xl md:text-4xl'><strong>&nbsp;Action</strong></h2>
-                        <h2 className='text-[#4DB1CC] text-center text-2xl sm:text-3xl md:text-4xl'>&nbsp;is Faith is Action is...</h2>
+                        <h2 className='flex text-canvas-blue text-center text-2xl sm:text-3xl md:text-4xl'>Faith is</h2>
+                        <h2 className='text-canvas-orange text-center text-2xl sm:text-3xl md:text-4xl'><strong>&nbsp;Action</strong></h2>
+                        <h2 className='text-canvas-blue text-center text-2xl sm:text-3xl md:text-4xl'>&nbsp;is Faith is Action is...</h2>
 
                     </div>
                 </div>

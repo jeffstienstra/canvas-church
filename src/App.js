@@ -1,12 +1,14 @@
-import Home from './components/Home';
+import {Routes, Route} from 'react-router-dom'
+
 import About from './components/About';
-import Contact from './components/Contact';
-import Story from './components/Story';
 import Believe from './components/Believe';
 import Community from './components/Community';
-import Sundays from './components/Sundays';
+import Contact from './components/Contact';
+import Home from './components/Home';
+import LiveStream from './components/LiveStream';
 import Navigation from './components/Navigation';
-import {Routes, Route} from 'react-router-dom'
+import Story from './components/Story';
+import Sundays from './components/Sundays';
 
 function App() {
   return (
@@ -17,10 +19,11 @@ function App() {
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/about' element={<About/>}/>
-        <Route path='/contact' element={<Contact/>}/>
-        <Route path='/story' element={<Story/>}/>
         <Route path='/believe' element={<Believe/>}/>
         <Route path='/community' element={<Community/>}/>
+        <Route path='/contact' element={<Contact/>}/>
+        <Route path='/liveStream' element={<LiveStream/>}/>
+        <Route path='/story' element={<Story/>}/>
         <Route path='/sundays' element={<Sundays/>}/>
       </Routes>
     </>

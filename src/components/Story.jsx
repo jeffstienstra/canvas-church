@@ -3,18 +3,15 @@ import PhotoCard from './PhotoCard'
 
 function Story() {
     return (
-        <div className='bg-wood-floor-blue'>
-
-            {/* container */}
-            <div className='mt-8 sm:mt-16 mx-auto px-8 flex flex-col py-8 pb-20 items-center
-                bg-white bg-opacity-30'>
-                <div className='max-w-[668px] mb-6'>
+        <div className='bg-wood-floor-blue min-h-screen'>
+            <div className='min-h-screen flex flex-col items-center py-20 md:py-28 px-8 bg-white bg-opacity-30'>
+                <div className='max-w-[668px]'>
                     <PhotoCard image=''
                         title="Our Story"
                         marginTop='mt-8'
-                        paddingY='py-12'
+                        paddingY='py-8'
                         subtitle={
-                            <div className='my-4 px-12 sm:px-8 sm:my-12 sm:text-xl'>
+                            <div className='my-4 px-4 sm:px-8sm:text-xl'>
                                 <p>
                                     We started out in 2019 as a church plant - part of a larger church. As we grew and learned from our community how to
                                     live out the grace of God, we grew into a different understanding than our parent church and classis.
@@ -43,7 +40,7 @@ function Story() {
                                 <p>
                                     We found a space to call our own in December of 2022, just in time to kick off the new year together as
                                     a faith community. Come on over and check it out at
-                                    <a className='cursor-pointer text-[#D55A1E]'
+                                    <a className='cursor-pointer text-canvas-orange'
                                         href="https://www.google.com/maps/place/2976+Ivanrest+Ave+SW,+Wyoming,+MI+49418/@42.9106243,-85.7436595,18.68z/data=!4m5!3m4!1s0x8819b05cdbb3415b:0x294fde5b39e82952!8m2!3d42.9106414!4d-85.7431625"
                                         target='_blank' rel='noreferrer' role='button'
                                     > 2976 Ivanrest Ave SW in Wyoming, MI</a>  Sundays at 10am!

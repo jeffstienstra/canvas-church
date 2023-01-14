@@ -13,16 +13,16 @@ function Home() {
                     bg-fixed bg-black bg-opacity-75'>
                     <div className='flex justify-center items-center h-full'>
                         <div className='text-center text-white'>
-                            <h1 className='text-[#D55A1E] text-6xl sm:text-6xl md:text-8xl font-bold text-center'
-                            >canvas <span className='text-[#4DB1CC] text-6xl sm:text-6xl md:text-8xl font-bold text-center'>church</span></h1>
+                            <h1 className='text-canvas-orange text-6xl sm:text-6xl md:text-8xl font-bold text-center'
+                            >canvas <span className='text-canvas-blue text-6xl sm:text-6xl md:text-8xl font-bold text-center'>church</span></h1>
                             <h1 className='text-3xl md:text-6xl font-bold tracking-tight'>a community for all</h1>
                             <div className='m-8'>
-                                <h1 className='text-white text-xl sm:text-2xl md:text-4xl font-bold text-center'>sundays @10</h1>
+                                <h1 className='text-white text-xl sm:text-2xl md:text-4xl font-bold text-center'>Sundays @10</h1>
                             </div>
                             <div className='flex flex-col justify-center items-center flex-wrap'>
                                 <div className='m-4'>
                                     <a className='px-5 py-3
-                                        border-transparent border-none bg-[#D55A1E]
+                                        border-transparent border-none bg-canvas-orange
                                         font-medium text-sm leading-snug uppercase rounded-full shadow-lg
                                         hover:bg-[#d76e3a] focus:border-white focus:ring-0
                                         transition duration-150 ease-in-out'
@@ -47,7 +47,7 @@ function Home() {
                 <DataCard/>
                 <PhotoCard
                     image='bg-flaking-paint'
-                    title="why the name Canvas church?"
+                    title="Why the name 'canvas' church?"
                     marginTop='mt-8 md:mt-16'
                     paddingY='py-8'
                     subtitle={

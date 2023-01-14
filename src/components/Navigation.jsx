@@ -1,6 +1,6 @@
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
-import {FaTimes, FaEnvelope, FaLaugh, FaPaperPlane, FaHandshake, FaNewspaper, FaBookMedical, FaBook, FaChevronDown, FaBars, FaEnvelopeOpen} from 'react-icons/fa'
+import {FaTimes, FaEnvelope, FaVideo, FaLaugh, FaPaperPlane, FaHandshake, FaNewspaper, FaBookMedical, FaBook, FaChevronDown, FaBars, FaEnvelopeOpen} from 'react-icons/fa'
 import {HiChatBubbleBottomCenterText, HiChatBubbleLeftRight} from 'react-icons/hi2'
 import {BsCalendar2EventFill} from 'react-icons/bs'
 import {ImBooks, ImAddressBook} from 'react-icons/im'
@@ -9,11 +9,17 @@ import Logo from '../assets/canvas-church-logo-transparent.svg'
 
 const about = [
     {
+        name: 'Live Stream',
+        description: 'Sundays @10am',
+        href: '/liveStream',
+        icon: FaVideo,
+    },
+    {
         name: 'Our Story',
         // description: 'Stories Matter',
         href: '/story',
         icon: FaBook,
-    },
+    }
     // {
     //     name: 'Our Team',
     //     // description: 'Friendly Faces',
@@ -105,7 +111,7 @@ export default function Example() {
                     <div className='-my-2 -mr-2'>
                         <Popover.Button className='inline-flex items-center justify-center rounded-md
                             bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500
-                            focus:outline-none focus:ring-2 focus:ring-inset focus:ring-[#4DB1CC]'>
+                            focus:outline-none focus:ring-2 focus:ring-inset focus:ring-canvas-blue'>
                         <span className='sr-only'>Open menu</span>
                         <FaBars className='h-6 w-6' aria-hidden='true' />
                         </Popover.Button>
@@ -126,7 +132,7 @@ export default function Example() {
                     <div className='sm:mx-4 divide-y-2 divide-gray-50 rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5'>
                         <div className='flex flex-col justify-center p-5'>
                             <div className='flex items-center justify-between'>
-                                <div className='rounded-md focus:outline-none focus:ring-2 focus:ring-[#4DB1CC] focus:ring-offset-2'>
+                                <div className='rounded-md focus:outline-none focus:ring-2 focus:ring-canvas-blue focus:ring-offset-2'>
                                     <a href='/'>
                                         <span className='sr-only'>Canvas Church</span>
                                         <img
@@ -137,7 +143,7 @@ export default function Example() {
                                     </a>
                                 </div>
                                 <div className='-mr-2'>
-                                    <Popover.Button className='inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-[#4DB1CC]'>
+                                    <Popover.Button className='inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-canvas-blue'>
                                         <span className='sr-only'>Close menu</span>
                                         <FaTimes className='h-6 w-6' aria-hidden='true' />
                                     </Popover.Button>
@@ -145,23 +151,27 @@ export default function Example() {
                             </div>
 
                             {/* About mobile fly-out menu option*/}
-                            <Popover className='flex flex-col justify-center items-center mb-2 popover'>
+                            <Popover className='flex flex-col items-center mb-2 popover text-center'>
                                 {({ open }) => (
                                     <>
-                                        <a href='/' className='mb-2 text-lg font-medium text-gray-500 hover:text-gray-900
-                                            rounded-md focus:outline-none focus:ring-2 focus:ring-[#4DB1CC] focus:ring-offset-2'>
+                                        <a href='/' className='w-[90%] sm:w-fit mb-2 text-lg font-medium text-gray-500 hover:text-gray-900
+                                            rounded-md focus:outline-none focus:ring-2 focus:ring-canvas-blue focus:ring-offset-2'>
                                             Home
                                         </a>
-                                        <a href='/sundays' className='mb-2 text-lg font-medium text-gray-500 hover:text-gray-900
-                                            rounded-md focus:outline-none focus:ring-2 focus:ring-[#4DB1CC] focus:ring-offset-2'>
-                                            Sundays
+                                        <a href='/livestream' className='w-[90%] sm:w-fit mb-2 text-lg font-medium text-gray-500 hover:text-gray-900
+                                            rounded-md focus:outline-none focus:ring-2 focus:ring-canvas-blue focus:ring-offset-2'>
+                                            Live Stream
+                                        </a>
+                                        <a href='/sundays' className='w-[90%] sm:w-fit mb-2 text-lg font-medium text-gray-500 hover:text-gray-900
+                                            rounded-md focus:outline-none focus:ring-2 focus:ring-canvas-blue focus:ring-offset-2'>
+                                            What Are Sundays Like?
                                         </a>
                                         <Popover.Button
                                             className={classNames(
                                             open ? 'text-gray-900' : 'text-gray-500',
-                                            'group inline-flex items-center rounded-md bg-white text-lg',
+                                            'w-[90%] sm:w-fit group inline-flex justify-center rounded-md bg-white text-lg',
                                             'font-medium hover:text-gray-900 focus:outline-none focus:ring-2',
-                                            'focus:ring-[#4DB1CC] focus:ring-offset-2'
+                                            'focus:ring-canvas-blue focus:ring-offset-2'
                                             )}
                                         >
                                             <div className='flex font-medium items-center'>
@@ -191,7 +201,7 @@ export default function Example() {
                                                             <a key={item.name} href={item.href}
                                                                 className='-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50'
                                                             >
-                                                            <item.icon className='h-6 w-6 flex-shrink-0 text-[#4DB1CC]' aria-hidden='true' />
+                                                            <item.icon className='h-6 w-6 flex-shrink-0 text-canvas-blue' aria-hidden='true' />
                                                             <div className='ml-4'>
                                                                 <p className='text-lg font-medium text-gray-900'>{item.name}</p>
                                                                 <p className='mt-1 text-sm text-gray-500'>{item.description}</p>
@@ -212,7 +222,7 @@ export default function Example() {
                                         <Popover.Button
                                             className={classNames(
                                             open ? 'text-gray-900' : 'text-gray-500',
-                                            'group inline-flex items-center rounded-md bg-white text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-[#4DB1CC] focus:ring-offset-2'
+                                            'group inline-flex items-center rounded-md bg-white text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-canvas-blue focus:ring-offset-2'
                                             )}
                                         >
                                             <div className='flex'>
@@ -243,7 +253,7 @@ export default function Example() {
                                                             <a key={item.name} href={item.href}
                                                                 className='-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50'
                                                             >
-                                                            <item.icon className='h-6 w-6 flex-shrink-0 text-[#4DB1CC]' aria-hidden='true' />
+                                                            <item.icon className='h-6 w-6 flex-shrink-0 text-canvas-blue' aria-hidden='true' />
                                                             <div className='ml-4'>
                                                                 <p className='text-base font-medium text-gray-900'>{item.name}</p>
                                                                 <p className='mt-1 text-sm text-gray-500'>{item.description}</p>
@@ -276,7 +286,7 @@ export default function Example() {
                                         <Popover.Button
                                             className={classNames(
                                             open ? 'text-gray-900' : 'text-gray-500',
-                                            'group inline-flex items-center rounded-md bg-white text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-[#4DB1CC] focus:ring-offset-2'
+                                            'group inline-flex items-center rounded-md bg-white text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-canvas-blue focus:ring-offset-2'
                                             )}
                                         >
                                             <div className='flex'>
@@ -307,7 +317,7 @@ export default function Example() {
                                                             <a key={item.name} href={item.href}
                                                                 className='-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50'
                                                             >
-                                                            <item.icon className='h-6 w-6 flex-shrink-0 text-[#4DB1CC]' aria-hidden='true' />
+                                                            <item.icon className='h-6 w-6 flex-shrink-0 text-canvas-blue' aria-hidden='true' />
                                                             <div className='ml-4'>
                                                                 <p className='text-base font-medium text-gray-900'>{item.name}</p>
                                                                 <p className='mt-1 text-sm text-gray-500'>{item.description}</p>

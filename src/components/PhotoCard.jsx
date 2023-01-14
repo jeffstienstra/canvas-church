@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react'
 
-function PhotoCard({image, title, subtitle, marginTop, paddingY, extraClasses}) {
+function PhotoCard({image, title, subtitle, marginTop, paddingY}) {
     const [parentClasses, setParentClasses] = useState('');
     const [containerClasses, setContainerClasses] = useState('');
 
@@ -13,7 +13,7 @@ useEffect(() => {
     return (
         <div className={parentClasses}>
             <div className={containerClasses}>
-                <h3 className='font-bold text-2xl md:text-5xl cursor-default'>{title}</h3>
+                <h3 className='font-bold text-4xl sm:text-5xl cursor-default'>{title}</h3>
                 {subtitle}
             </div>
         </div>
