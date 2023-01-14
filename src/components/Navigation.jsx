@@ -76,8 +76,14 @@ const community = [
     },
 ]
 const callsToAction = [
-{ name: 'Questions? Send us a note!', href: '/contact', icon: FaPaperPlane },
-{ name: 'Sign up for our newsletter', href: '/contact', icon: FaNewspaper },
+    {
+        name: 'Sign up for our newsletter',
+        href: 'https:/canvaschurchgr.us14.list-manage.com/subscribe?u=c49d47dd6ee3ce6d1017f7b21&id=35ad903272',
+        icon: FaNewspaper,
+        target: '_blank',
+        rel: 'noreferrer',
+        role: 'button' },
+    { name: 'Questions? Send us a note!', href: '/contact', icon: FaPaperPlane },
 // { name: 'Want to get involved? Click here!', href: '/contact', icon: FaEnvelope },
 ]
 
@@ -343,6 +349,9 @@ export default function Example() {
                                     {callsToAction.map((item) => (
                                         <div key={item.name} className='flow-root'>
                                             <a href={item.href}
+                                                target={item.target}
+                                                rel={item.rel}
+                                                role={item.role}
                                                 className='flex items-center p-4 m-1 rounded-md
                                                     text-base font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-100'
                                             >
