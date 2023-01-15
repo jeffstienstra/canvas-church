@@ -9,7 +9,7 @@ function VideoFrame() {
                 width="100%"
                 height="100%"
                 title='liveStream'
-                src={`https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fcanvaschurchgr.org%2Fvideos%2FVideoID%2F`}
+                src={`https://www.facebook.com/watch/?v=1517070942110701`}
                 allowFullScreen={true}
             />
             <p className='p-1 text-canvas-blue text-center text-sm font-medium'>
