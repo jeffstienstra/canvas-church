@@ -5,91 +5,22 @@ import {HiChatBubbleBottomCenterText, HiChatBubbleLeftRight} from 'react-icons/h
 import {BsCalendar2EventFill} from 'react-icons/bs'
 import {ImBooks, ImAddressBook} from 'react-icons/im'
 import Logo from '../assets/canvas-church-logo-transparent.svg'
-// import {about} from './NavigationList'
-
-const about = [
-    {
-        name: 'Our Story',
-        // description: 'Stories Matter',
-        href: '/story',
-        icon: FaBook,
-    }
-    // {
-    //     name: 'Our Team',
-    //     // description: 'Friendly Faces',
-    //     href: '/about',
-    //     icon: ImAddressBook,
-    // },
-    // {
-    //     name: 'What We Believe',
-    //     // description: 'Theology Guides Actions',
-    //     href: '/believe',
-    //     icon: FaBookMedical,
-    // },
-    ]
-
-const media = [
-    // {
-    //     name: 'Sermons',
-    //     // description: 'Relax and listen to Sundays gone by',
-    //     href: '/media',
-    //     icon: HiChatBubbleBottomCenterText,
-    // },
-    // {
-    //     name: 'Newsletters',
-    //     // description: 'Catch up on the latest community news',
-    //     href: 'media',
-    //     icon: FaNewspaper,
-    // },
-    // {
-    //     name: 'Resources',
-    //     // description: 'Help is out there',
-    //     href: 'media',
-    //     icon: ImBooks,
-    // },
-]
-
-const community = [
-    {
-        name: 'Kids',
-        // description: 'Fer da kids!',
-        href: '/community',
-        icon: FaLaugh,
-    },
-    {
-        name: 'Small Groups',
-        // description: 'low stress get togethers',
-        href: '/community',
-        icon: HiChatBubbleLeftRight,
-    },
-    {
-        name: 'Events',
-        // description: 'Go do the things',
-        href: '/community',
-        icon: BsCalendar2EventFill,
-    },
-    {
-        name: 'Partnerships',
-        // description: 'Better together',
-        href: '/community',
-        icon: FaHandshake,
-    },
-]
-const callsToAction = [
-    {
-        name: 'Sign up for our newsletter',
-        href: 'https://canvaschurchgr.us14.list-manage.com/subscribe?u=c49d47dd6ee3ce6d1017f7b21&id=35ad903272',
-        icon: FaNewspaper,
-        target: '_blank',
-        rel: 'noreferrer',
-        role: 'button' },
-    { name: 'Questions? Send us a note!', href: '/contact', icon: FaPaperPlane },
-// { name: 'Get involved!', href: '/contact', icon: FaHandshake },
-]
+import {about, callsToAction} from './MenuItems'
+import Anchor from './Anchor'
 
 function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
 }
+
+const transition = {
+    as: Fragment,
+    enter: 'duration-200 ease-out',
+    enterFrom: 'opacity-0 scale-95',
+    enterTo: 'opacity-100 scale-100',
+    leave: 'duration-100 ease-in',
+    leaveFrom: 'opacity-100 scale-100',
+    leaveTo: 'opacity-0 scale-95'
+};
 
 export default function Example() {
     return (
@@ -119,15 +50,8 @@ export default function Example() {
                 </div>
             </div>
 
-            <Transition
-                as={Fragment}
-                enter='duration-200 ease-out'
-                enterFrom='opacity-0 scale-95'
-                enterTo='opacity-100 scale-100'
-                leave='duration-100 ease-in'
-                leaveFrom='opacity-100 scale-100'
-                leaveTo='opacity-0 scale-95'
-                >
+            <Transition {...transition}>
+
                 <Popover.Panel focus className='popover-panel absolute inset-x-0 top-0 origin-top-right transform p-2 transition'>
                     <div className='sm:mx-4 divide-y-2 divide-gray-50 rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5'>
                         <div className='flex flex-col justify-center p-5'>
@@ -143,7 +67,9 @@ export default function Example() {
                                     </a>
                                 </div>
                                 <div className='-mr-2'>
-                                    <Popover.Button className='inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-canvas-blue'>
+                                    <Popover.Button className='inline-flex items-center justify-center rounded-md
+                                        bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500
+                                        focus:outline-none focus:ring-2 focus:ring-inset focus:ring-canvas-blue'>
                                         <span className='sr-only'>Close menu</span>
                                         <FaTimes className='h-6 w-6' aria-hidden='true' />
                                     </Popover.Button>
@@ -154,26 +80,11 @@ export default function Example() {
                             <Popover className='flex flex-col items-center mb-2 popover text-center'>
                                 {({ open }) => (
                                     <>
-                                        <a href='/' className='w-[90%] sm:w-fit mb-2 text-lg font-medium text-gray-500 hover:text-gray-900
-                                            rounded-md focus:outline-none focus:ring-2 focus:ring-canvas-blue focus:ring-offset-2'>
-                                            Home
-                                        </a>
-                                        <a href='https://mailchi.mp/8cf7731c9397/canvas-church-news-for-all-9530605?e=c43785b8a1'
-                                            target='_blank'
-                                            rel='noreferrer'
-                                            role='button'
-                                            className='w-[90%] sm:w-fit mb-2 text-lg font-medium text-gray-500 hover:text-gray-900
-                                            rounded-md focus:outline-none focus:ring-2 focus:ring-canvas-blue focus:ring-offset-2'>
-                                            Newsletter
-                                        </a>
-                                        <a href='/livestream' className='w-[90%] sm:w-fit mb-2 text-lg font-medium text-gray-500 hover:text-gray-900
-                                            rounded-md focus:outline-none focus:ring-2 focus:ring-canvas-blue focus:ring-offset-2'>
-                                            Live Stream
-                                        </a>
-                                        <a href='/sundays' className='w-[90%] sm:w-fit mb-2 text-lg font-medium text-gray-500 hover:text-gray-900
-                                            rounded-md focus:outline-none focus:ring-2 focus:ring-canvas-blue focus:ring-offset-2'>
-                                            What Are Sundays Like?
-                                        </a>
+                                        <Anchor title='Home' href='/'/>
+                                        <Anchor title='Newsletter' href='https://mailchi.mp/8cf7731c9397/canvas-church-news-for-all-9530605?e=c43785b8a1' target='_blank'/>
+                                        <Anchor title='Live Stream' href='/livestream'/>
+                                        <Anchor title='What Are Sundays Like?' href='/sundays'/>
+
                                         <Popover.Button
                                             className={classNames(
                                             open ? 'text-gray-900' : 'text-gray-500',
@@ -193,15 +104,8 @@ export default function Example() {
                                             </div>
                                         </Popover.Button>
 
-                                        <Transition
-                                            as={Fragment}
-                                            enter='transition ease-out duration-200'
-                                            enterFrom='opacity-0 translate-y-1'
-                                            enterTo='opacity-100 translate-y-0'
-                                            leave='transition ease-in duration-150'
-                                            leaveFrom='opacity-100 translate-y-0'
-                                            leaveTo='opacity-0 translate-y-1'
-                                        >
+                                        <Transition {...transition}>
+
                                             <Popover.Panel className='relative z-10 max-w-md min-w-[325px] mt-4'>
                                                 <div className='overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5'>
                                                     <div className='relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8'>
@@ -245,15 +149,8 @@ export default function Example() {
                                             </div>
                                         </Popover.Button>
 
-                                        <Transition
-                                            as={Fragment}
-                                            enter='transition ease-out duration-200'
-                                            enterFrom='opacity-0 translate-y-1'
-                                            enterTo='opacity-100 translate-y-0'
-                                            leave='transition ease-in duration-150'
-                                            leaveFrom='opacity-100 translate-y-0'
-                                            leaveTo='opacity-0 translate-y-1'
-                                        >
+                                        <Transition {...transition}>
+
                                             <Popover.Panel className='relative z-10 max-w-md min-w-[325px] mt-4'>
                                                 <div className='overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5'>
                                                     <div className='relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8'>
@@ -309,15 +206,8 @@ export default function Example() {
                                             </div>
                                         </Popover.Button>
 
-                                        <Transition
-                                            as={Fragment}
-                                            enter='transition ease-out duration-200'
-                                            enterFrom='opacity-0 translate-y-1'
-                                            enterTo='opacity-100 translate-y-0'
-                                            leave='transition ease-in duration-150'
-                                            leaveFrom='opacity-100 translate-y-0'
-                                            leaveTo='opacity-0 translate-y-1'
-                                        >
+                                        <Transition {...transition}>
+
                                             <Popover.Panel className='relative z-10 max-w-md min-w-[325px] mt-4'>
                                                 <div className='overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5'>
                                                     <div className='relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8'>
