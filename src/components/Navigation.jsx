@@ -68,7 +68,7 @@ export default function Example() {
                                 </div>
                                 <div className='-mr-2'>
                                     <Popover.Button className='inline-flex items-center justify-center rounded-md
-                                        bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500
+                                        bg-white p-2 text-canvas-gray hover:bg-gray-100 hover:text-gray-500
                                         focus:outline-none focus:ring-2 focus:ring-inset focus:ring-canvas-blue'>
                                         <span className='sr-only'>Close menu</span>
                                         <FaTimes className='h-6 w-6' aria-hidden='true' />
@@ -87,7 +87,7 @@ export default function Example() {
 
                                         <Popover.Button
                                             className={classNames(
-                                            open ? 'text-gray-900' : 'text-gray-500',
+                                            open ? 'text-gray-900' : 'text-canvas-gray',
                                             'w-[90%] sm:w-fit group inline-flex justify-center rounded-md bg-white text-lg',
                                             'font-medium hover:text-gray-900 focus:outline-none focus:ring-2',
                                             'focus:ring-canvas-blue focus:ring-offset-2'
@@ -97,7 +97,7 @@ export default function Example() {
                                                 <span>About</span>
                                                 <FaChevronDown
                                                     className={classNames(
-                                                        open ? 'text-gray-600' : 'text-gray-400',
+                                                        open ? 'text-canvas-gray' : 'text-gray-400',
                                                         'ml-2 mt-0.5 h-5 w-5 group-hover:text-gray-500'
                                                     )}
                                                     aria-hidden='true' />
