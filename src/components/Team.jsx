@@ -1,17 +1,17 @@
 import React from 'react'
 import PhotoCard from './PhotoCard'
 
-function Story() {
+function Team() {
     return (
         <div className='bg-wood-floor-blue min-h-screen'>
             <div className='min-h-screen flex flex-col items-center py-20 md:py-28 px-8 bg-white bg-opacity-30'>
                 <div className='max-w-[668px]'>
                     <PhotoCard image=''
-                        title="Our Story"
+                        title="Team"
                         marginTop='mt-8'
                         paddingY='py-8'
                         subtitle={
-                            <div className='my-4 px-4 sm:px-8 sm:text-xl'>
+                            <div className='my-4 px-4 sm:px-8sm:text-xl'>
                                 <p>
                                     We started out in 2019 as a church plant - part of a larger church. As we grew and learned from our community how to
                                     live out the grace of God, we grew into a different understanding than our parent church and classis.
@@ -58,4 +58,4 @@ function Story() {
     )
 }
 
-export default Story
+export default Team

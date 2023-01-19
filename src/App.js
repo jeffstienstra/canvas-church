@@ -9,6 +9,8 @@ import LiveStream from './components/LiveStream';
 import Navigation from './components/Navigation';
 import Story from './components/Story';
 import Sundays from './components/Sundays';
+import Team from './components/Team';
+import Values from './components/Values';
 
 function App() {
   return (
@@ -25,6 +27,8 @@ function App() {
         <Route path='/liveStream' element={<LiveStream/>}/>
         <Route path='/story' element={<Story/>}/>
         <Route path='/sundays' element={<Sundays/>}/>
+        <Route path='/team' element={<Team/>}/>
+        <Route path='/values' element={<Values/>}/>
       </Routes>
     </>
   );

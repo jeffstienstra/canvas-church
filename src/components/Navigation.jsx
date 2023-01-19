@@ -82,7 +82,7 @@ export default function Example() {
                                     <>
                                         <Anchor title='Home' href='/'/>
                                         <Anchor title='Newsletter' href='https://mailchi.mp/8cf7731c9397/canvas-church-news-for-all-9530605?e=c43785b8a1' target='_blank'/>
-                                        <Anchor title='Live Stream' href='https://www.facebook.com/canvaschurchgr.org' target='_blank'/>
+                                        <Anchor title='Live Stream' href='/livestream'/>
                                         <Anchor title='What Are Sundays Like?' href='/sundays'/>
 
                                         <Popover.Button

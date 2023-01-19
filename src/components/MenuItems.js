@@ -1,4 +1,4 @@
-import {FaTimes, FaPaperPlane, FaEnvelope, FaBookOpen, FaLaugh, FaHandshake, FaNewspaper, FaBookMedical, FaBook, FaAddressBook, FaChevronDown, FaBars} from 'react-icons/fa'
+import {FaPeopleCarry, FaTimes, FaHandHoldingHeart, FaPaperPlane, FaEnvelope, FaBookOpen, FaLaugh, FaHandshake, FaNewspaper, FaBookMedical, FaBook, FaAddressBook, FaChevronDown, FaBars} from 'react-icons/fa'
 import {HiChatBubbleBottomCenterText, HiChatBubbleLeftRight} from 'react-icons/hi2'
 import {BsCalendar2EventFill} from 'react-icons/bs'
 import {ImBooks, ImAddressBook} from 'react-icons/im'
@@ -10,7 +10,19 @@ const about =
             // description: 'Stories Matter',
             href: '/story',
             icon: FaBook,
-        }
+        },
+        {
+            name: 'Core Values',
+            // description: 'Stories Matter',
+            href: '/values',
+            icon: FaHandHoldingHeart,
+        },
+        // {
+        //     name: 'Team',
+        //     // description: 'Stories Matter',
+        //     href: '/team',
+        //     icon: FaPeopleCarry,
+        // }
     ]
 
 const callsToAction = [

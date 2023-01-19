@@ -4,10 +4,10 @@ module.exports = {
   theme: {
     screens: {
       sm: '480px',
-        md: '768px',
-        lg: '976px',
-        xl: '1200px',
-        xxl: '1440px',
+      md: '768px',
+      lg: '976px',
+      xl: '1200px',
+      xxl: '1440px',
 
     },
     extend: {
@@ -22,7 +22,6 @@ module.exports = {
         'flaking-paint-graffiti': "url('assets/flaking-paint-graffiti-killari-hotaru.jpg')",
         'wood-floor-blue': "url('assets/wood-floor-blue-killari-hotaru.jpg')",
         'wood-floor-blue-wide': "url('assets/wood-floor-blue-wide-killari-hotaru.jpg')",
-        'plaster-blue': "url('assets/plaster-blue-killari-hotaru.jpg')",
       },
       colors: {
         'canvas-orange': '#D55A1E',
